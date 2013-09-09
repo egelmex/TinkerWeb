@@ -1,0 +1,67 @@
+---
+layout: post
+title: RGB Coffee Table.
+categories:
+- Builds
+tags: []
+status: publish
+type: post
+published: true
+meta:
+  _wpas_done_all: '1'
+  _edit_last: '5'
+---
+Want to build an RGB LED coffee table? Here's how you do it for £75! [youtube=http://www.youtube.com/watch?v=0ZUA9rlcdKs]
+<div style="float: right; background-color: rgba(249, 249, 249, 1); padding: 5px; margin: 5px; border-radius: 5px; border: 1px solid #d6d6d6;">
+<h2>Shopping list.</h2>
+<ul>
+	<li>1 x <a title="Lack" href="http://www.ikea.com/gb/en/catalog/products/10065958/">Ikea Table</a> : £20.</li>
+	<li>64 x RGB LED  : £7</li>
+	<li>1 x <a href="http://www.seeedstudio.com/depot/rainbowduino-led-driver-platform-plug-and-shine-p-371.html">rainduino</a> : £16.</li>
+	<li>1 x Acrylic sheet : £14</li>
+	<li>1 x Frosting spray : £4</li>
+	<li>1 x 3mm Hardboard : £5</li>
+</ul>
+<h2>Store Cupboard Stuff.</h2>
+<ul>
+	<li>4 x colours of single core wire.</li>
+	<li>4 x self tapping screws</li>
+	<li>4 x washer</li>
+	<li>Heat-shrink</li>
+</ul>
+<h2>Tools</h2>
+<ul>
+	<li>Solder.</li>
+	<li>Solder Iron.</li>
+	<li>Craft Knife.</li>
+	<li>Ruler.</li>
+	<li>Drill.</li>
+	<li>5mm drill bit.</li>
+</ul>
+</div>
+The table is based around Ikea's Lack coffee table, which is both super cheap and has some interesting properties. Firstly it is 19" wide, if you not sure why that is important you need to go see the <a href="http://wiki.eth0.nl/index.php/LackRack">LackRack</a>! The other feature which makes it the perfect choice for hack is it's interesting construction; the Lack is made from hardboard and cardboard so cutting it is easy. <a href="http://tinkersoc.org/wp-content/uploads/2013/05/P1000695.jpg"><img class="aligncenter size-medium wp-image-814" alt="Ikea Construction" src="http://tinkersoc.org/wp-content/uploads/2013/05/P1000695-225x300.jpg" width="225" height="300" /></a>
+<h2>Step 1: LED jig.</h2>
+You will need a platform to support your LEDs, mark out a 8 x 8 grid on a sheet of 3mm hard board*, drill 5mm hole on each point and place one LED in each hole making sure each LED has the same orientation. <img class=" wp-image-815 alignleft" alt="Marking Out the Matrix" src="http://tinkersoc.org/wp-content/uploads/2013/05/P1000702-300x225.jpg" width="270" height="203" /><img class=" wp-image-816 alignright" alt="LED's Mounted in the Jig" src="http://tinkersoc.org/wp-content/uploads/2013/05/P1000709-300x225.jpg" width="270" height="203" />
+<h2></h2>
+<h2></h2>
+<h2></h2>
+<h2>Step 2 : Solder the Array.</h2>
+The array is wired up in a common anode matrix.  This is the single most boring part of the construction; there are 64 x 4  joints to solder and heat shrink**. <img class=" wp-image-817 alignleft" alt="Teaching soldering" src="http://tinkersoc.org/wp-content/uploads/2013/05/P1000711-300x225.jpg" width="270" height="203" /> <img class=" wp-image-818 alignright" alt="Lots of wires" src="http://tinkersoc.org/wp-content/uploads/2013/05/P1000721-300x225.jpg" width="270" height="203" />
+<h2></h2>
+<h2></h2>
+<h2></h2>
+<h2></h2>
+<h2></h2>
+<h2>Step 3 : Prepare the Table.</h2>
+The Lack table we used is cheap for a reason... it's made from Cardboard! Mark up a square on your table big enough to hold your panel and use your craft-knife/Stanley to cut out the panel.  Try and be neat about this, however if it's not perfect don't worry as it will be covered by the frosted acrylic later.  Once you have removed the square you will find some corrugate cardboard inside the table remove this to make a cavity.  You may also wish to make a hole hidden away for a USB cable to come out of.
+<h2>Step 4 : Prepare the acrylic.</h2>
+First Time to prepare the table top. First you will want to frost the acrylic on the back side by painting it with the frosting spray***.  Before continuing make sure the back is fully dry.  Next you will want to <a href="http://www.youtube.com/watch?v=hM_DR3t4mjI">drill a hole</a> 5 cm from each of the corners of the acrylic, you will use these to affix the acrylic to the table.
+<h2>Step 5 : Finishing up.</h2>
+<img class="size-medium wp-image-788 alignright" alt="604033_10151504530747557_1691518450_n" src="http://tinkersoc.org/wp-content/uploads/2013/04/604033_10151504530747557_1691518450_n-225x300.jpg" width="225" height="300" /> Right time to put this all together. Drop your array into the table and screw on the top, use self tapping screws, however we found we did need a pilot hole.
+<h2>Step 6: The Software.</h2>
+The table really isn't much good without a way to power it and provide pretty patterns, so we introduced <a href="http://pixelinvaders.ch/?page_id=160" target="_blank">Pixel Controller</a> running on a computer.
+Pixel controller is a great real time matrix controller that can create some very beautiful patterns.
+
+The Rainbowduino must be flashed with firmware in order to communicate with the Pixel Controller software, and that is available from a <a href="https://code.google.com/p/rainbowduino-v3-streaming-firmware/" target="_blank">Google Code Rep</a> and there is a <a href="https://code.google.com/p/pixelcontroller/downloads/detail?name=PixelControllerManual-ger.pdf&amp;can=2&amp;q=" target="_blank">full manual</a> to walk you through setting it up, if you read German that is. For those that don't the English Rainbowduino manual seems to be missing. However once you've flashed the firmware onto the 'duino, the config file for Pixel Controller needs to editted to direct it to the correct COM port and then selecting the defaults as you choose.
+<h2>Improvements</h2>
+No project is really finished. We believe we could easily fit a second panel into the this table (or more if we doubled the pixel density). The rainbowduino supports this kind of multiplexing the only issue would be costs and time! *We used cardboard, which was what we had to hand, however the LEDs became loose during construction. ** We didn't heat-shrink the joints as we didn't have any at hand, however if we were to redo this project we would  as it makes the joints much stronger and less likely to short. ***Again we cheated here and used a sheet of tracing paper. It does the job.
