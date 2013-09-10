@@ -33,13 +33,21 @@
 					<li>
 					{% endif %}
                                         <a href="{{ site.url }}/calendar.html">Calendar</a></li>
-					<!-- Blog -->
+					<!-- About -->
 					{% if page.title == "About" %}
 					<li class="active">
 					{% else %}
 					<li>
 					{% endif %}
                                         <a href="{{ site.url }}/about.html">About</a></li>
+
+					<!-- Sponsors -->
+					{% if page.title == "Sponsors" %}
+					<li class="active">
+					{% else %}
+					<li>
+					{% endif %}
+                                        <a href="{{ site.url }}/sponsors.html">Sponsors</a></li>
 
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources<b class="caret"></b></a>

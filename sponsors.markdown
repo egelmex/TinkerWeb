@@ -1,15 +1,11 @@
 ---
-layout: page
+layout: default 
 title: Sponsors
 categories: []
 tags: []
 status: publish
 type: page
 published: true
-meta:
-  _edit_last: '5'
-  _wp_page_template: default
-  _wpas_done_all: '1'
 ---
 We would like to thank those people/companies who have kindly sponsored TinkerSoc over the year! Their help has meant we have been able to do more awesome projects than we could otherwise consider.
 <p style="text-align: center;"><a href="http://www.weller-tools.com/index.php#Europe"><img class="aligncenter size-full wp-image-742" alt="main_logo" src="http://tinkersoc.org/wp-content/uploads/2013/02/main_logo.jpg" width="200" height="106" /></a></p>
