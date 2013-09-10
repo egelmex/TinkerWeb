@@ -9,9 +9,37 @@
 			<a class="brand" href="{{ site.url }}/">TinkerSoc</a>
                         <div class="nav-collapse collapse">
                                 <ul class="nav">
-					<li class="active"><a href="{{ site.url }}/">Home</a></li>
-                                        <li><a href="{{ site.url }}/blog">Blog</a></li>
-                                        <li><a href="{{ site.url }}/calendar.html">Calendar</a></li>
+					<!-- HOME -->
+					{% if page.title == "Home" %}
+					<li class="active">
+					{% else %}
+					<li>
+					{% endif %}
+					<a href="{{ site.url }}/">Home</a></li>
+
+					<!-- Blog -->
+					{% if page.title == "Blog" %}
+					<li class="active">
+					{% else %}
+					<li>
+					{% endif %}
+                                        <a href="{{ site.url }}/blog">Blog</a></li>
+
+
+					<!-- Blog -->
+					{% if page.title == "Calendar" %}
+					<li class="active">
+					{% else %}
+					<li>
+					{% endif %}
+                                        <a href="{{ site.url }}/calendar.html">Calendar</a></li>
+					<!-- Blog -->
+					{% if page.title == "About" %}
+					<li class="active">
+					{% else %}
+					<li>
+					{% endif %}
+                                        <a href="{{ site.url }}/about.html">About</a></li>
 				</ul>
 				<div class="navbar-form btn-group pull-right">
 					<button class="btn" onclick="location.href='{{ site.url }}/joinus.html'">Join Us!</button>
