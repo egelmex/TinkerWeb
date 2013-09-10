@@ -17,3 +17,22 @@ picture:
         width: "600"
       source_default: 
         width: "300"
+    icon:
+      ppi: [1, 1.5]
+      attr:
+        class: "test"
+        itemprop: "image"
+      source_medium:
+        media: "(min-width: 24px)"
+        width: "32px"
+      source_default: 
+        width: "32px"
+
+flickr_set:
+  gallery_tag:   'p'
+  gallery_class: 'gallery'
+  a_href:        nil
+  a_target:      '_blank'
+  image_rel:     ''
+  image_size:    's'
+  api_key:       '251b6a7131ff48d65978013ff47083d1'
