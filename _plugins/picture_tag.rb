@@ -149,7 +149,7 @@ module Jekyll
         # Reference: https://github.com/scottjehl/picturefill/issues/79
         source_keys.reverse.each { |source|
           media = " data-media=\"#{instance[source]['media']}\"" unless source == 'source_default'
-          source_tags += "<span data-src=\"#{instance[source][:generated_src]}\"#{media}></span>\n"
+          source_tags += "<span data-src=\"#{site.url}\\#{instance[source][:generated_src]}\"#{media}></span>\n"
         }
 
         # Note: we can't indent html output because markdown parsers will turn 4 spaces into code blocks
