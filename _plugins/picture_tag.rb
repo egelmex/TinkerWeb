@@ -38,6 +38,7 @@ module Jekyll
       # Gather settings
       site = context.registers[:site]
       settings = site.config['picture']
+      @siteurl = site.config['url']
       markup = /^(?:(?<preset>[^\s.:\/]+)\s+)?(?<image_src>[^\s]+\.[a-zA-Z0-9]{3,4})\s*(?<source_src>(?:(source_[^\s.:\/]+:\s+[^\s]+\.[a-zA-Z0-9]{3,4})\s*)+)?(?<html_attr>[\s\S]+)?$/.match(render_markup)
       preset = settings['presets'][ markup[:preset] ] || settings['presets']['default']
 
@@ -149,7 +150,7 @@ module Jekyll
         # Reference: https://github.com/scottjehl/picturefill/issues/79
         source_keys.reverse.each { |source|
           media = " data-media=\"#{instance[source]['media']}\"" unless source == 'source_default'
-          source_tags += "<span data-src=\"#{instance[source][:generated_src]}\"#{media}></span>\n"
+          source_tags += "<span data-src=\"#{@siteurl}#{instance[source][:generated_src]}\"#{media}></span>\n"
         }
 
         # Note: we can't indent html output because markdown parsers will turn 4 spaces into code blocks
