@@ -7,12 +7,15 @@ module Jekyll
     end
     
     def render(context)
-      @content = super
-<<-eos
+      @content = Liquid::Template.parse(super).render(context)
+output = <<-eos
+      <!-- Start span --> 
       <div class=\"span#{@text}\">
       #{@content}
       </div>
+      <!-- end span -->
 eos
+output
     end
   end
 end
@@ -46,7 +49,8 @@ module Jekyll
     end
 
     def render(context)
-	Liquid::Template.parse(super).render(@content)
+	#Liquid::Template.parse(super).render(@content)
+	@content = super 
 <<-eos
 <div class="alert"><button type="button" class="close" data-dismiss="alert">&times;</button>
 #{@content}

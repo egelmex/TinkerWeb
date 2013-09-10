@@ -2,3 +2,18 @@ name: Your New Jekyll Site
 markdown: redcarpet
 pygments: true
 paginate: 5
+picture:
+  source: assets/images/_fullsize
+  output: generated
+  markup: "picturefill"
+  presets:
+    default:
+      ppi: [1, 1.5]
+      attr:
+        class: "test"
+        itemprop: "image"
+      source_medium:
+        media: "(min-width: 40em)"
+        width: "600"
+      source_default: 
+        width: "300"
