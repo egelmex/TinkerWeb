@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Contact
+title: Contact Us
 categories: []
 tags: []
 status: publish
