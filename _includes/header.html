@@ -33,6 +33,8 @@
 					<li>
 					{% endif %}
                                         <a href="{{ site.url }}/calendar.html">Calendar</a></li>
+
+
 					<!-- About -->
 					{% if page.title == "About" %}
 					<li class="active">
@@ -40,6 +42,14 @@
 					<li>
 					{% endif %}
                                         <a href="{{ site.url }}/about.html">About</a></li>
+
+					<!-- Photos -->
+					{% if page.title == "Photos" %}
+					<li class="active">
+					{% else %}
+					<li>
+					{% endif %}
+                                        <a href="{{ site.url }}/photos.html">Photos</a></li>
 
 					<!-- Sponsors -->
 					{% if page.title == "Sponsors" %}

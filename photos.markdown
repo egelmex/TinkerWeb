@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Photo Gallery
+title: Photos
 categories: []
 tags: []
 status: publish
