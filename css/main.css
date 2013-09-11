@@ -158,3 +158,41 @@ ul.posts span {
 .post pre.terminal code {
   background-color: #333;
 }
+
+.blogpost {
+	padding: 0px;
+}
+
+.blogpost h1.blogheading {
+	background-color: #e0e0e0;
+	text-align: left;
+	border-bottom: 1px solid black;
+	padding: 0px 16px;
+	margin: 0px;
+}
+
+.blogbody {
+	padding: 16px;
+}
+
+@media (max-width: 400px) {
+.item {
+	width:100%;
+	min-width:100%;
+	margin: 10px;
+}
+}
+
+@media (min-width: 400px) {
+.item {
+	width:240px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	margin:10px;
+}
+}
+
+#fit-width .masonry {
+  margin: 0 auto;
+}

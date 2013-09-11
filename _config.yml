@@ -29,10 +29,13 @@ picture:
         width: "32px"
 
 flickr_set:
-  gallery_tag:   'p'
+  gallery_tag:   'div'
   gallery_class: 'gallery'
-  a_href:        nil
+  gallery_id:    'container'
+  a_href:        'b'
   a_target:      '_blank'
   image_rel:     ''
-  image_size:    's'
+  image_size:    'm'
+  image_class:   'item'
   api_key:       '251b6a7131ff48d65978013ff47083d1'
+
