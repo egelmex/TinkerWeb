@@ -1,7 +1,7 @@
 name: Your New Jekyll Site
 markdown: redcarpet
 pygments: true
-paginate: 5
+#paginate: 5
 brandname: TinkerSoc
 
 picture:
