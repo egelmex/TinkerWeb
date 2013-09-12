@@ -6,9 +6,7 @@ tags: []
 status: publish
 type: page
 published: true
-meta:
-  _edit_last: '9'
-  _wp_page_template: default
+weight: 0
 ---
 # Becoming a member #
 

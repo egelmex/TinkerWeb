@@ -9,70 +9,33 @@
 			<a class="brand" href="{{ site.url }}/">{% picture icon logo(2013)-white-transparent.png %}TinkerSoc</a>
                         <div class="nav-collapse collapse">
                                 <ul class="nav">
-					<!-- HOME -->
-					{% if page.title == "Home" %}
-					<li class="active">
-					{% else %}
-					<li>
-					{% endif %}
-					<a href="{{ site.url }}/">Home</a></li>
 
-					<!-- Blog -->
-					{% if page.title == "Blog" %}
-					<li class="active">
-					{% else %}
-					<li>
-					{% endif %}
-                                        <a href="{{ site.url }}/blog">Blog</a></li>
+					{% sorted_for p in site.pages sort_by:weight %}
+						{% if p.weight == 0 %}
 
+						{% else %}
+						{% capture d %}{{ p.url | dir }}{% endcapture %}
+						{% capture f %}{{ p.url | basename }}{% endcapture %}
+						{% if d == "/" or f == "index.html" %}
 
-					<!-- Blog -->
-					{% if page.title == "Calendar" %}
-					<li class="active">
-					{% else %}
-					<li>
-					{% endif %}
-                                        <a href="{{ site.url }}/calendar.html">Calendar</a></li>
+								{% if page.title == p.title %}
+								<li class="active">
+								{% else %}
+								<li>
+								{% endif %}
+								<a href="{{ site.url }}{{ p.url}}">{{ p.title }}</a></li>
+							{% endif %}
+						{% endif %}
+					{% endsorted_for %}
 
 
-					<!-- About -->
-					{% if page.title == "About" %}
-					<li class="active">
-					{% else %}
-					<li>
-					{% endif %}
-                                        <a href="{{ site.url }}/about.html">About</a></li>
-
-					<!-- Photos -->
-					{% if page.title == "Photos" %}
-					<li class="active">
-					{% else %}
-					<li>
-					{% endif %}
-                                        <a href="{{ site.url }}/photos.html">Photos</a></li>
-
-					<!-- Sponsors -->
-					{% if page.title == "Sponsors" %}
-					<li class="active">
-					{% else %}
-					<li>
-					{% endif %}
-                                        <a href="{{ site.url }}/sponsors.html">Sponsors</a></li>
-
-					<!-- Contact -->
-					{% if page.title == "Contact Us" %}
-					<li class="active">
-					{% else %}
-					<li>
-					{% endif %}
-                                        <a href="{{ site.url }}/contact.html">Contact Us</a></li>
 
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources<b class="caret"></b></a>
 						<ul class="dropdown-menu">
 							<li><a href="{{ site.url }}/resources/constitution.html">Constitution</a></li>
 							<li><a href="{{site.url}}/resources/equipment.html">Equipment</a></li>
-						  <li><a href="#">Something else here</a></li>
+							<li><a href="{{site.url}}/resources/grouporders.html">Group Orders</a></li>
 						  <li class="divider"></li>
 						  <li class="nav-header">Nav header</li>
 						  <li><a href="#">Separated link</a></li>

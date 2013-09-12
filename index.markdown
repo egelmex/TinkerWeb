@@ -4,6 +4,7 @@ title: Home
 #content1: This is a test :)
 content2: More test
 Content3: Last col.
+weight: 1
 ---
 
 #TinkerSoc#

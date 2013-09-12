@@ -9,11 +9,9 @@ module Jekyll
     def render(context)
       @content = Liquid::Template.parse(super).render(context)
 output = <<-eos
-      <!-- Start span --> 
-      <div class=\"span#{@text}\">
-      #{@content}
-      </div>
-      <!-- end span -->
+<div class=\"span#{@text}\">
+#{@content}
+</div>
 eos
 output
     end
@@ -52,9 +50,7 @@ module Jekyll
 	#Liquid::Template.parse(super).render(@content)
 	@content = super 
 <<-eos
-<div class="alert"><button type="button" class="close" data-dismiss="alert">&times;</button>
-#{@content}
-</div>
+<div class="alert"><button type="button" class="close" data-dismiss="alert">&times;</button> #{@content}</div>
 eos
     end
   end
@@ -82,7 +78,52 @@ eos
 end
 
 
+module Jekyll
+  module DirFilter
+    def dir(input)
+	    d = File.dirname(input)
+	    print d + "\n"
+	    d
+    end
+  end
+end
+
+Liquid::Template.register_filter(Jekyll::DirFilter)
+
+module Jekyll
+  module BaseNameFilter
+    def basename(input)
+	    d = File.basename(input)
+	    print input + "->" + d + "\n"
+	    d
+    end
+  end
+end
+
+Liquid::Template.register_filter(Jekyll::BaseNameFilter)
+
 Liquid::Template.register_tag('span', Jekyll::SpanBlock)
 Liquid::Template.register_tag('row', Jekyll::RowBlock)
 Liquid::Template.register_tag('alert', Jekyll::AlertBlock)
 Liquid::Template.register_tag('well', Jekyll::WellBlock)
+
+module Jekyll
+  class SortedForTag < Liquid::For
+    def render(context)
+      sorted_collection = context[@collection_name].dup
+      sorted_collection.sort_by! { |i| i.to_liquid[@attributes['sort_by']] || 99999 }
+
+      sorted_collection_name = "#{@collection_name}_sorted".sub('.', '_')
+      context[sorted_collection_name] = sorted_collection
+      @collection_name = sorted_collection_name
+
+      super
+    end
+
+    def end_tag
+      'endsorted_for'
+    end
+  end
+end
+
+Liquid::Template.register_tag('sorted_for', Jekyll::SortedForTag)
