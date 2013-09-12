@@ -198,3 +198,12 @@ ul.posts span {
 .gallery {
   margin: 0 auto;
 }
+
+.img-carousel {
+	width: 100%
+}
+
+.img-carousel img {
+	width: 100%
+}
+
