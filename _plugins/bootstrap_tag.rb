@@ -82,7 +82,6 @@ module Jekyll
   module DirFilter
     def dir(input)
 	    d = File.dirname(input)
-	    print d + "\n"
 	    d
     end
   end
@@ -94,7 +93,6 @@ module Jekyll
   module BaseNameFilter
     def basename(input)
 	    d = File.basename(input)
-	    print input + "->" + d + "\n"
 	    d
     end
   end
