@@ -11,22 +11,22 @@
 
 {% include header.html %}
 
-    <div class="container-fluid">
-      <div class="row-fluid">
-        <div class="span3">
-          <div class="well sidebar-nav">
-            <ul class="nav nav-list">
-		{% include links.html %}
-            </ul>
-          </div><!--/.well -->
-        </div><!--/span-->
-        <div class="span9 text-left">
-		{{ content }}
-	</div>
-</div>
+<div class="container">
+	{% row %}
+	{% span 3 %}
+	<div class="well sidebar-nav">
+		<ul class="nav nav-list">
+			{% include links.html %}
+		</ul>
+	</div><!--/.well -->
+	{% endspan %}
+	{% span 9 text-left %}
+	{{ content }}
+	{% endspan %}
+	{% endrow %}
 
 
-{% include footer.html %}
+	{% include footer.html %}
 </div>
 
 </body>

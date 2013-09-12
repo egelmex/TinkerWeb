@@ -9,7 +9,7 @@ module Jekyll
     def render(context)
       @content = Liquid::Template.parse(super).render(context)
 output = <<-eos
-<div class=\"span#{@text}\">
+<div class=\"col-md-#{@text}\">
 #{@content}
 </div>
 eos
@@ -50,7 +50,7 @@ module Jekyll
 	#Liquid::Template.parse(super).render(@content)
 	@content = super 
 <<-eos
-<div class="alert"><button type="button" class="close" data-dismiss="alert">&times;</button> #{@content}</div>
+<div class="alert alert-warning fade in"><button type="button" class="close" data-dismiss="alert">&times;</button> #{@content}</div>
 eos
     end
   end

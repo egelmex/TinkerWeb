@@ -12,7 +12,7 @@ weight: 0
 
 {% alert %} {% capture alert %} **Warning!** People have reported issues with the Kent Union site, if you are having issues please contact us.  {% endcapture %} {{ alert | markdownify }} {% endalert %} 
 {% row %}
-{% span 8 %}
+{% span 7 %}
 {% capture right %}
 If you’ve popped into any of our workshops and enjoyed it and would like to see more in the future, we'd ask you to become an official supporting member of TinkerSoc! The more members that sign up, the more funding from the Union we get, which equals more events including workshops and socials!
 
@@ -22,7 +22,7 @@ The membership for the whole year is **£5 for Kent Students, and £7 for non-st
 
 {% endspan %}
 
-{% span 4 %}
+{% span 5 %}
 {% well %}
 {% capture list %}
 # To become a member, please follow these steps. #

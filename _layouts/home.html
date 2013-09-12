@@ -11,16 +11,16 @@
 
 {% include header.html %}
 
-<div class="container">
 
 
-	<!-- Main hero unit for a primary marketing message or call to action -->
-	<div class="hero-unit">
+<!-- Main hero unit for a primary marketing message or call to action -->
+<div class="jumbotron">
 
-		<div class="row-fluid">
-			<div class="span6">
+	<div class="container">
+		{% row %}
+			{% span 6 %}
 				{{ content }}
-			</div>
+			{% endspan %}
 
 			{% span 6 text-center %}
 
@@ -44,17 +44,22 @@
 					</div>
 				</div>
 				<!-- Carousel nav -->
-				<a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-				<a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+				<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+					<span class="icon-prev"></span>
+				</a>
+				<a class="right carousel-control" href="#myCarousel" data-slide="next">
+					<span class="icon-next"></span>
+				</a>
 			</div>
 			&nbsp;
 			{% endspan %}
 
 			<!--<img src="images/tinkerlogo.png" class="span6">-->
-		</div>
+		{% endrow %}
 	</div>
+</div>
 
-
+<div class="container">
 	{% include footer.html %}
 </div>
 

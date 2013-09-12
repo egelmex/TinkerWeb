@@ -1,30 +1,29 @@
 <!-- Example row of columns -->
-<div class="row">
+{% row %}
 
-	<div class="span4 text-left">
+{% span 4 text-left%}
 {% well %}
 {% include footer_left.html %}
 <!-- wha -->
 {% endwell %}
-	</div>
+{% endspan %}
 
-	<div class="span4 text-left">
+{% span 4 text-left%}
 {% well %}
 {% capture FooterCenter %}
 {% include footer_center.markdown%}
 {% endcapture %}
 {{ FooterCenter | markdownify }}
 {% endwell %}
-	</div>
+{% endspan %}
 
-	<div class="span4 text-left">
-		{% well %}
+{% span 4 text-left%}
+{% well %}
 {% capture FooterRight %}
 {% include footer_right.markdown %}
 {% endcapture %}
 {{ FooterRight | markdownify }}
 {% endwell%}
-	</div>
+{% endspan %}
 
-</div>
-
+{% endrow %}

@@ -1,14 +1,14 @@
 <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="navbar-inner">
+        <div class="navbar navbar-inverse navbar-fixed-top">
                 <div class="container">
-                        <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                         </button>
-			<a class="brand" href="{{ site.url }}/">{% picture icon logo(2013)-white-transparent.png %}TinkerSoc</a>
-                        <div class="nav-collapse collapse">
-                                <ul class="nav">
+			<a class="navbar-brand" href="{{ site.url }}/">{% picture icon logo(2013)-white-transparent.png %}TinkerSoc</a>
+                        <div class="navbar-collapse collapse">
+                                <ul class="nav navbar-nav">
 
 					{% sorted_for p in site.pages sort_by:weight %}
 						{% if p.weight == 0 %}
@@ -37,13 +37,13 @@
 							<li><a href="{{site.url}}/resources/equipment.html">Equipment</a></li>
 							<li><a href="{{site.url}}/resources/grouporders.html">Group Orders</a></li>
 						  <li class="divider"></li>
-						  <li class="nav-header">Nav header</li>
+						  <li class="dropdown-header">Nav header</li>
 						  <li><a href="#">Separated link</a></li>
 						  <li><a href="#">One more separated link</a></li>
 						</ul>
 				      </li>
 				</ul>
-				<div class="navbar-form btn-group pull-right">
+				<div class="navbar-form btn-group navbar-right">
 					<button class="btn" onclick="location.href='{{ site.url }}/joinus.html'">Join Us!</button>
 				</div>
                         </div><!--/.nav-collapse -->

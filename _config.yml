@@ -2,6 +2,8 @@ name: Your New Jekyll Site
 markdown: redcarpet
 pygments: true
 paginate: 5
+brandname: TinkerSoc
+
 picture:
   source: assets/images/_fullsize
   output: generated
@@ -23,10 +25,10 @@ picture:
         class: "test"
         itemprop: "image"
       source_medium:
-        media: "(min-width: 24px)"
-        width: "32px"
+        media: "(min-width: 20px)"
+        width: "20px"
       source_default: 
-        width: "32px"
+        width: "20px"
 
 flickr_set:
   gallery_tag:   'div'
