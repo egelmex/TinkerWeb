@@ -35,7 +35,7 @@ picture:
         class: "icon"
         itemprop: "image"
       source_default: 
-        width: "20px"
+        width: "32px"
 
 flickr_set:
   gallery_tag:   'div'
