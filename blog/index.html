@@ -4,23 +4,15 @@ title: Blog
 ---
 
 
-<div id="home">
-	{% for post in site.posts limit:5 %}
-	{%row %}
-	{% span 12 %}
-	<div class="well blogpost">
-		{% row blogheading%}
-		{% span 8 %}
-		<h1>
-			<a href="{{%site.url}}{{ post.url }}">{{ post.title }}</a></h1> 
-		{% endspan %}
-		{% span 4 pull-right blog-heading-date %} ({{ post.date | date_to_string }}) {% endspan %}
-		{% endrow %}
-		<div class="blogbody">
-			{{ post.excerpt }}
-		</div>
-	</div>
-	{% endspan %}
-	{% endrow %}
-	{% endfor %}
-</div>
+<section id="home">
+  <br />
+  {% for post in site.posts limit:5 %}
+  <article class="row blog-post-index">
+    <div class="blog-sep">{{ post.date | date_to_string }}</div>
+    <h2 class="blog-heading"><a href="{{%site.url}}{{ post.url }}">{{ post.title }}</a></h2>
+    {{ post.excerpt }}
+  </article>
+  <hr class="blogpost-sep">
+  {% endfor %}
+</section>
+
