@@ -10,13 +10,11 @@ meta:
   _edit_last: '10'
   _wpas_done_all: '1'
 ---
-This week at TinkerSoc, Dan talked about Software Defined Radio.
+This week at TinkerSoc, Dan talked about Software Defined Radio. Software designed radio (SDR) has been around a while, but doing it cheaply at home has only recently happened. SDR removes the requirement of expensive hardware and allows someone with an antenna and some receiver hardware to receive signals and use their computer to do the difficult decoding bit.
 
-Software designed radio (SDR) has been around a while, but doing it cheaply at home has only recently happened. SDR removes the requirement of expensive hardware and allows someone with an antenna and some receiver hardware to receive signals and use their computer to do the difficult decoding bit.
+<a href="http://wiki.spench.net/images/thumb/3/31/Ezcap_EzTV668.jpg/800px-Ezcap_EzTV668.jpg"><img class="aligncenter" title="RTL 2832" src="http://wiki.spench.net/images/thumb/3/31/Ezcap_EzTV668.jpg/800px-Ezcap_EzTV668.jpg" alt="" /></a>
 
-<a href="http://wiki.spench.net/images/thumb/3/31/Ezcap_EzTV668.jpg/800px-Ezcap_EzTV668.jpg"><img class="aligncenter" title="RTL 2832" src="http://wiki.spench.net/images/thumb/3/31/Ezcap_EzTV668.jpg/800px-Ezcap_EzTV668.jpg" alt="" width="800" height="512" /></a>
-
-A RTL2832 chip was discovered to have a very wide frequency reception range. This can be found in many TV dongles. Dan's is 64MHz to 1.7Ghz. The dongles are quite cheap (~£15) and he got his from <a href="http://www.ebay.co.uk/itm/Newsky-DVB-T-Stick-Freeview-DAB-DAB-FM-USB-RTL2832U-R820T-budget-SDR-package-/110982399388?" target="_blank">eBay</a> for £16. Matt and I picked a couple up from <a title="Amazon" href="http://www.amazon.co.uk/gp/product/B009VBUYA0/ref=oh_details_o00_s00_i00" target="_blank">Amazon</a>. While these are currently out of stock, there are lots of options, most of the eBay auctions describe how the TV tuners can be used for SDR anyway. Some don't though, so it's a case of buyer beware, but there is a good list on what hardware can be used <a title="SDR Getting Started and Hardware" href="http://www.thepowerbase.com/2012/06/getting-started-with-rtl-sdr/" target="_blank">here</a>. Essentially they need to contain the RTL2832 chip, this is the magic chip that the software defined radio can interface with.
+A RTL2832 chip was discovered to have a very wide frequency reception range. This can be found in many TV dongles. Dan's is 64MHz to 1.7Ghz. The dongles are quite cheap (~£15) and he got his from <a href="http://www.ebay.co.uk/itm/Newsky-DVB-T-Stick-Freeview-DAB-DAB-FM-USB-RTL2832U-R820T-budget-SDR-package-/110982399388?" target="_blank">eBay</a> for £16. Matt and I picked a couple up from<a title="Amazon" href="http://www.amazon.co.uk/gp/product/B009VBUYA0/ref=oh_details_o00_s00_i00" target="_blank">Amazon</a>. While these are currently out of stock, there are lots of options, most of the eBay auctions describe how the TV tuners can be used for SDR anyway. Some don't though, so it's a case of buyer beware, but there is a good list on what hardware can be used <a title="SDR Getting Started and Hardware" href="http://www.thepowerbase.com/2012/06/getting-started-with-rtl-sdr/" target="_blank">here</a>. Essentially they need to contain the RTL2832 chip, this is the magic chip that the software defined radio can interface with.
 
 <em>Side note, for us students, TV licensing is a tricky thing, but as long as you don't use the device to tune into TV you won't have a problem</em>
 
@@ -61,7 +59,7 @@ That streams this to a listening port of 8001 for another program to remotely co
 <td></td>
 </tr>
 <tr>
-<td> <a title="ve3sqb" href="http://www.ve3sqb.com/" target="_blank">ve3sqb</a></td>
+<td><a title="ve3sqb" href="http://www.ve3sqb.com/" target="_blank">ve3sqb</a></td>
 <td>A site with free programs to design antennas, we went with a discone, because they are inherently wide band</td>
 <td><a title="ve3sqb" href="http://www.ve3sqb.com/" target="_blank">Windows, but should run under Wine</a></td>
 </tr>
@@ -80,7 +78,7 @@ Using the discone program from <a title="ve3sqb" href="http://www.ve3sqb.com/" t
 
 The other part is 3 pieces of wire at 54 cm (rounding up from 53.8) in a star shape, this is soldered in the centre. This was strong enough to not need a support ring, so we soldered all this in place using the core of CAT5 cable (ethernet cable) wrapped around the overlapping parts.
 
-Next we got a some 1.8 inch (4.5 cm) PVC tubing and cut it to around 80 cm. At the top we had a spacer thing, (from an ethernet cable spindle). It is just used to hold the cone and disc on the top of the PVC pipe, and allow use to leave a 0.5 cm gap between each part. We hot glued the pieces in place, making sure the spokes for each were aligned.
+Next we got a some 1.8 inch (4.5 cm) PVC tubing and cut it to around 80 cm. At the top we had a spacer thing, (from an ethernet cable spindle). It is just used to hold the cone and disc on the top of the PVC pipe, and allow use to leave a 0.5 cm gap between each part. We hot glued the pieces in place, making sure the spokes for each were aligned. 
 
 Finally, we used some coax cable, with the female termination removed. We threaded it up through the PVC pipe and soldered the signal lead (centre lead) to the top disc part of the antenna. The outer shield was connected to the top of the cone. We can now plug the discone into the TV dongle, and voila one discone antenna.
 
