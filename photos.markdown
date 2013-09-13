@@ -5,7 +5,7 @@ categories: []
 tags: []
 status: publish
 type: page
-published: true
+published: false
 postload: photos.js
 meta:
   _wp_page_template: full-width-page.php
@@ -17,12 +17,10 @@ meta:
 	width: 240px;
 }
 </style>
-
+{% if page.published == true %}
 {% span 12 %}
 <div class="text-center" style="width:100%">
 {% flickr_set 72157635467790779 %}
 </div>
 {% endspan %}
-<script>
-
-</script>
+{% endif %}

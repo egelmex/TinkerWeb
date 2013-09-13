@@ -2,50 +2,32 @@
 {% include header.html %}
 
 
-
+<style>
+.img-carousel img {
+	width:100%;
+}
+</style>
 <!-- Main hero unit for a primary marketing message or call to action -->
-<div class="jumbotron">
-
-	<div class="container">
-		{% row %}
-			{% span 6 %}
-				{{ content }}
-			{% endspan %}
-
-			{% span 6 text-center %}
-
-			<div id="myCarousel" class="carousel slide well">
-				<ol class="carousel-indicators">
-					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-					<li data-target="#myCarousel" data-slide-to="1"></li>
-				</ol>
-				<!-- Carousel items -->
-				<div class="carousel-inner">
-					<div class="active item">
-						{% picture carousel logo(2013)-transparent.png %}
-					</div>
-					<div class="item">
-
-						{% picture carousel logo(2013)-transparent.png %}
-						<div class="carousel-caption">
-							<h3>First Thumbnail label</h3>
-							<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-						</div>
-					</div>
-				</div>
-				<!-- Carousel nav -->
-				<a class="left carousel-control" href="#myCarousel" data-slide="prev">
-					<span class="icon-prev"></span>
-				</a>
-				<a class="right carousel-control" href="#myCarousel" data-slide="next">
-					<span class="icon-next"></span>
-				</a>
-			</div>
-			{% endspan %}
-		{% endrow %}
+<div class="jumbotron" style="padding:0">
+	<div id="myCarousel" class="carousel slide well">
+		<ol class="carousel-indicators">
+			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			<li data-target="#myCarousel" data-slide-to="1"></li>
+		</ol>
+		<!-- Carousel items -->
+		<div class="carousel-inner">
+			{{ content }}
+		</div>
+		<!-- Carousel nav -->
+		<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+			<span class="icon-prev"></span>
+		</a>
+		<a class="right carousel-control" href="#myCarousel" data-slide="next">
+			<span class="icon-next"></span>
+		</a>
 	</div>
 </div>
 
-	{% include footer.html %}
-	{% include includes_bottom.html %}
+{% include footer.html %}
+{% include includes_bottom.html %}
 </html>

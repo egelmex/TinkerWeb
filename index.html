@@ -1,0 +1,56 @@
+---
+layout: home 
+title: Home
+weight: 1
+---
+<!-- slide 1 -->
+<div class="active item">
+<div class="container">
+{% row %}
+{% span 6 %}
+{% capture slide1 %}
+#TinkerSoc#
+##Kent University's Maker Society##
+
+Tinkersoc is the society where we build, hack and (sometimes) blow things up.
+Tinkersoc is not just about electronics, although we do like our fair share of
+LEDS, it is a society that embraces all forms of technology, engineering and
+craft.
+
+So, if you have an interest in: building your own tube amp, getting a
+radio license, high powered burning lasers or you just want to learn design
+and solder a circuit.  Then this is the society for you!
+{% endcapture %}
+{{ slide1 | markdownify }}
+{% endspan %}
+
+{% span 6 %}
+{% picture carousel logo(2013)-transparent.png %}
+<!-- 1 -->
+{% endspan %}
+{% endrow %}
+</div>
+</div>
+
+
+<!-- slide2 -->
+<div class="item">
+<div class="container">
+{% row %}
+{% span 6 %}
+"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+{% endspan %}
+
+{% span 6 %}
+{% picture carousel logo(2013)-transparent.png %}
+<!-- 2 -->
+{% endspan %}
+{% endrow %}
+</div>
+</div>
+
