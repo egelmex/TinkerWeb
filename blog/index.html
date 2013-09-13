@@ -9,7 +9,7 @@ title: Blog
 	<div class="row">
 		<div class="span12 ">
 			<div class="well blogpost">
-				<h1 class="blogheading"><a href="{{%site.url}}{{ post.url }}">{{ post.title }}</a> <div style="float:right">({{ post.date | date_to_string }})</div></h1>
+				<h1 class="blogheading"><a href="{{%site.url}}{{ post.url }}">{{ post.title }}</a> {% span 4 pull-right blog-heading-date %} ({{ post.date | date_to_string }}) {% endspan %} </h1>
 				<div class="blogbody">
 					{{ post.excerpt }}
 				</div>
