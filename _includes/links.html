@@ -1,4 +1,27 @@
-    {% for post in site.posts %}
-    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{site.url}}{{ post.url }}">{{ post.title }}</a></li>
-	      {% endfor %}
+<div class="panel-group" id="accordion">
 
+	{% for year in site.years %}   
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h4 class="panel-title">
+				<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#c{{ year.first.first.date | date: "%Y" }}
+					">
+					{{ year.first.first.date | date: "%Y" }}
+				</a>
+			</h4>
+		</div>
+		<div id="c{{ year.first.first.date | date: "%Y" }}" class="panel-collapse collapse">
+			<div class="panel-body">
+				{% for month in year %}                                                                                       
+				<h3>{{ month.first.date | date: "%B" }}</h3>                                                          
+				<ul>
+				{% for post in month %}                                                                                     
+				<li><a href="{{ post.url}}"> {{ post.title }} </a></li>
+				{% endfor %}
+				</ul>
+				{%endfor%}     
+			</div>
+		</div>
+	</div>
+{% endfor %} 
+</div>
