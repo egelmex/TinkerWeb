@@ -29,7 +29,7 @@ module Jekyll
     def render(context)
       @content = super
 <<-eos
-<div class="row">
+<div class="row #{@text}">
 #{@content}
 </div>
 eos
