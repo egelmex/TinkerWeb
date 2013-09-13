@@ -4,17 +4,40 @@ title: Blog
 ---
 
 
+<section id="home">
+  <br />
+  {% for post in site.posts limit:5 %}
+  <article class="row blog-post-index">
+    <div class="blog-sep">{{ post.date | date_to_string }}</div>
+    <h2 class="blog-heading"><a href="{{%site.url}}{{ post.url }}">{{ post.title }}</a></h2>
+    {{ post.excerpt }}
+  </article>
+  <hr class="blogpost-sep">
+  {% endfor %}
+</section>
+
+
+
+<!--
 <div id="home">
-	{% for post in site.posts limit:5 %}
-	<div class="row">
-		<div class="span12 ">
-			<div class="well blogpost">
-				<h1 class="blogheading"><a href="{{%site.url}}{{ post.url }}">{{ post.title }}</a> <div style="float:right">({{ post.date | date_to_string }})</div></h1>
-				<div class="blogbody">
-					{{ post.excerpt }}
-				</div>
-			</div>
-		</div>
+  <br />
+  {% for post in site.posts limit:5 %}
+  <div class="row">
+    <div class="span12 ">
+      <div class="media">
+	<div class="pull-left" href="{{%site.url}}{{ post.url }}">
+	  <a class="pull-left" href="{{%site.url}}{{ post.url }}">
+	    <img class="media-object" src="..." alt="...">
+	  </a>
 	</div>
-	{% endfor %}
+	<div class="media-body">
+	  <h4 class="media-heading"><a href="{{%site.url}}{{ post.url }}">{{ post.title }}</a></h4>
+	  {% span 1 pull-right blog-heading-date %} {{ post.date | date_to_string }} {% endspan %}
+	  {{ post.excerpt }}
+	</div>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
 </div>
+-->
