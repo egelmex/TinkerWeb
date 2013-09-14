@@ -9,7 +9,8 @@ type: post
 published: true
 ---
 
-Want to build an RGB LED coffee table? Here's how you do it for £75! [youtube=http://www.youtube.com/watch?v=0ZUA9rlcdKs]
+Want to build an RGB LED coffee table? Here's how you do it for £75!
+<iframe width="560" height="315" src="//www.youtube.com/embed/0ZUA9rlcdKs" frameborder="0" allowfullscreen></iframe>
 
 
 {% row %}
