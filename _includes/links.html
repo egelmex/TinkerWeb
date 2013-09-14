@@ -12,8 +12,8 @@
     {% for year in site.years %}   
     <div class="panel panel-default" style="margin: 2px;">
       <div class="panel-heading">
-	<h4 class="panel-title">
-	  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#c{{ year.first.first.date | date: "%Y" }}">
+	<h4 class="panel-title" data-toggle="collapse" data-parent="#accordion" href="#c{{ year.first.first.date | date: "%Y" }}">
+	  <a class="accordion-toggle">
 	    {{ year.first.first.date | date: "%Y" }}
 	  </a>
 	  <div class="drop-down-button">                                          
