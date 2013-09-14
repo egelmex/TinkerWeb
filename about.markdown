@@ -6,6 +6,7 @@ tags: []
 status: publish
 type: page
 published: true
+weight: 0
 ---
 TinkerSoc is a society for people who like to see the potential of technology and through experimentation come up with awesome new applications, often beyond the original intended use!
 
