@@ -3,6 +3,7 @@
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
     <script src="{{ site.url }}/js/masonry.pkgd.min.js"></script>
     <script src="{{ site.url }}/js/picturefill.js"></script>
-    {% if page.postload != "" and page.postload != nil %}
-    <script src="{{ site.url }}/js/{{page.postload}}"></script>
-    {%endif%}
+    {% for js in page.postload %}
+    <script src="{{ site.url }}/js/{{ js }}"></script>
+    {%endfor%}
+
