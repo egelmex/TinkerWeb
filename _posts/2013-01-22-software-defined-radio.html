@@ -6,9 +6,6 @@ tags: []
 status: publish
 type: post
 published: true
-meta:
-  _edit_last: '10'
-  _wpas_done_all: '1'
 ---
 This week at TinkerSoc, Dan talked about Software Defined Radio. Software designed radio (SDR) has been around a while, but doing it cheaply at home has only recently happened. SDR removes the requirement of expensive hardware and allows someone with an antenna and some receiver hardware to receive signals and use their computer to do the difficult decoding bit.
 
@@ -72,7 +69,7 @@ That streams this to a listening port of 8001 for another program to remotely co
 </table>
 Once Dan had demonstrated the software using a small TV antenna, we used steel wire to create a discone antenna.  We aimed at 110 Mhz, as 115 Mhz+ is where planes and other air traffic services tend to broadcast; lots of other cool things seem to talk on these frequencies too. Very little seems to sit around 100 Mhz and below that the military seems to start appearing. It's likely encrypted and not something we want to be arrested for listening in to. The dimensions of a discone antenna start getting far too large at 100 Mhz and below too.
 
-<a href="http://tinkersoc.org/2013/01/software-defined-radio/2013-01-21-21-33-05/" rel="attachment wp-att-707"><img class="size-large wp-image-707 aligncenter" title="Discone Anetenna" src="http://tinkersoc.org/wp-content/uploads/2013/01/2013-01-21-21.33.05-768x1024.jpg" alt="" width="550" height="733" /></a>
+{% picture 2013-01-22-software-defined-radio/pic1.jpg %}
 
 Using the discone program from <a title="ve3sqb" href="http://www.ve3sqb.com/" target="_blank">ve3sqb</a> we calculated the dimensions of the antenna for 110Mhz. We bought some galvanised garden wire from B&amp;Q, 50 m for £4.50, this was way too much for what we needed (you may as well spend £2 for less wire if you try to do this yourself). From this, we cut 6 x 75 cm spokes, and placed them evenly around a large bottom ring of wire (who's length we calculated using circumference = 2πr = πd). We made small hooks on the end of each spoke, to attach to the ring and soldered them in place. The bottom ring does nothing to the antenna except support it. At the top we made another ring, this time 5cm in diameter and attached the other end of each spoke to this in the same manner. This produces the cone part of the antenna.
 
