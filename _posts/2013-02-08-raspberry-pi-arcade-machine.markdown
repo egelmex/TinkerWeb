@@ -1,5 +1,5 @@
 ---
-layout: blog 
+layout: post
 title: Raspberry Pi Arcade Machine
 categories:
 - Builds
@@ -8,6 +8,7 @@ status: publish
 type: post
 published: true
 ---
+We built an arcade cabinet based on the designs by [Chris Moyles](http://chris.polymathic.net/cabinet/CAB-Model.pdf) as a large project in the Autumn term in 2012. We've detailed how we built it, and the software and hardware involved, to give you an idea as to how to build your own.
 
 # Contents #
 

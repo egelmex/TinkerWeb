@@ -3,7 +3,8 @@ markdown: redcarpet
 pygments: true
 #paginate: 5
 brandname: TinkerSoc
-
+dropdowns:
+ - Resources
 picture:
   source: assets/images/_fullsize
   output: generated

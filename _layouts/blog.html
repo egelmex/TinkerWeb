@@ -4,14 +4,11 @@
 <div class="container">
 	{% row %}
 	{% span 3 %}
-	<div class="well sidebar-nav">
-		<ul class="nav nav-list">
-			{% include links.html %}
-		</ul>
-	</div><!--/.well -->
+		{% include links.html %}
+	        <!-- a -->
 	{% endspan %}
-	{% span 9 text-left %}
-	{{ content }}
+	{% span 6 col-md-offset-0 %}
+	    {{ content }}
 	{% endspan %}
 	{% endrow %}
 </div>

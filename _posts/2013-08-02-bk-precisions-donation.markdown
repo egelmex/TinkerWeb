@@ -1,5 +1,5 @@
 ---
-layout: blog 
+layout: post
 title: B&K Precision's donation to TinkerSoc.
 categories:
 - News

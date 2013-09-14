@@ -6,9 +6,7 @@ tags: []
 status: publish
 type: page
 published: true
-meta:
-  _edit_last: '12'
-  _wp_page_template: default
+weight: 0
 ---
 We have a number of things, like Arduino boards and electronic bits and bobs you may want to use in your personal projects and we think it's cool -- as long as you don't break them! :)
 

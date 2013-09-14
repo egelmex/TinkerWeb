@@ -29,21 +29,26 @@
 							{% endif %}
 						{% endif %}
 					{% endsorted_for %}
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-<li><a href="{{ site.url }}/resources/constitution.html">Constitution</a></li>
-<li><a href="{{site.url}}/resources/equipment.html">Equipment</a></li>
-<li><a href="{{site.url}}/resources/grouporders.html">Group Orders</a></li>
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li class="divider"></li>
-                <li class="dropdown-header">Nav header</li>
-                <li><a href="#">Separated link</a></li>
-                <li><a href="#">One more separated link</a></li>
-              </ul>
-            </li>
+
+		{% for dropdown in site.dropdowns %}
+		<li class="dropdown">
+			<a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ dropdown }}<b class="caret"></b></a>
+			<ul class="dropdown-menu">
+					{% sorted_for p in site.pages sort_by:weight %}
+						{% if p.weight == 0 %}
+
+						{% else %}
+							{% capture d %}{{ p.url | dir }}{% endcapture %}
+							{% capture f %}{{ p.url | basename }}{% endcapture %}
+							{% capture dl %}/{{ dropdown | downcase }}{% endcapture %}
+							{% if d == dl %}
+								<li> <a href="{{ site.url }}{{ p.url}}">{{ p.title }}</a></li>
+							{% endif %}
+						{% endif %}
+					{% endsorted_for %}
+			</ul>
+		</li>
+		{% endfor %}
           </ul>
           <div class="navbar-form navbar-right">
 			  <button class="btn btn-success" onclick="location.href='{{site.url}}/joinus.html'">Join Us</button>
@@ -54,3 +59,4 @@
 
 
 				
+
