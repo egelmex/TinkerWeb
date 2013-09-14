@@ -1,18 +1,38 @@
 ---
 layout: blog 
 title: Blog
+postload: 
+ - waypoints.min.js
+ - waypoints-infinite.min.js
+ - blog.js
 ---
 
 
 <section id="home">
+	<div class="posts">
   <br />
-  {% for post in site.posts limit:5 %}
-  <article class="row blog-post-index">
+  {% for post in paginator.posts %}
+  <article class="row blog-post-index infinite-item">
     <div class="blog-sep">{{ post.date | date_to_string }}</div>
     <h2 class="blog-heading"><a href="{{%site.url}}{{ post.url }}">{{ post.title }}</a></h2>
     {{ post.excerpt }}
   </article>
   <hr class="blogpost-sep">
   {% endfor %}
+  </div>
+
+  <div class="pagination">
+  {% if paginator.previous_page %}
+  <a href="{{site.url}}/blog/page{{ paginator.previous_page }}" class="previous">Previous</a>
+  {% else %}
+    <span class="previous">Previous</span>
+  {% endif %}
+  <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+  {% if paginator.next_page %}
+  <a href="{{site.url}}/blog/page{{ paginator.next_page }}" class="next infinite-more-link">Next</a>
+  {% else %}
+    <span class="next">Next</span>
+  {% endif %}
+  </div>
 </section>
 
