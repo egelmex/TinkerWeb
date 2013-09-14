@@ -1,5 +1,5 @@
 ---
-layout: blog 
+layout: post
 title: RGB Coffee Table.
 categories:
 - Builds

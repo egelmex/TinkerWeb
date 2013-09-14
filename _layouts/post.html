@@ -1,9 +1,16 @@
 ---
 layout: default
 ---
-<h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
-
-<div class="post">
-{{ content }}
-</div>
+<div class="container">                 
+        {% row %}                       
+        {% span 3 %}                    
+                {% include links.html %}
+                <!-- a -->              
+        {% endspan %}                   
+        {% span 6 col-md-offset-0 %}
+	    <h2 class="blog-heading">{{ page.title }}</h2>      
+	    <p class="meta">{{ page.date | date_to_string }}</p>
+            {{ content }}               
+        {% endspan %}                   
+        {% endrow %}                    
+</div>                                  
