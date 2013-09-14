@@ -18,7 +18,7 @@
 						{% else %}
 						{% capture d %}{{ p.url | dir }}{% endcapture %}
 						{% capture f %}{{ p.url | basename }}{% endcapture %}
-						{% if d == "/" or f == "index.html" %}
+						{% if d == "/" or (f == "index.html" and (site.menufolders contains d)) %}
 
 								{% if page.title == p.title %}
 								<li class="active">

@@ -1,8 +1,11 @@
 name: Your New Jekyll Site
 markdown: redcarpet
 pygments: true
-#paginate: 5
+paginate: 5
+paginate_path: "blog/page:num"
 brandname: TinkerSoc
+menufolders:
+ - /blog
 dropdowns:
  - Resources
 picture:
