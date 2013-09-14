@@ -1,5 +1,5 @@
 ---
-layout: blog 
+layout: post
 title: Raspberry Pi Arcade Machine
 categories:
 - Builds
