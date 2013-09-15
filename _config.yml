@@ -28,11 +28,14 @@ picture:
       attr:
         class: "img-carousel"
         itemprop: "image"
-      source_medium:
-        media: "(min-width: 40em)"
-        height: "500"
-      source_default: 
+      source_xs:
+        media: "(max-width: 480px)"
         width: "300"
+      source_sm:
+        media: "(min-width: 481px) and (max-width: 768px)"
+        width: "400"
+      source_default: 
+        width: "500"
     icon:
       ppi: [1, 1.5]
       attr:
