@@ -9,30 +9,30 @@ postload:
 
 
 <section id="home">
-	<div class="posts">
-  <br />
-  {% for post in paginator.posts %}
-  <article class="row blog-post-index infinite-item">
-    <div class="blog-sep">{{ post.date | date_to_string }}</div>
-    <h2 class="blog-heading"><a href="{{%site.url}}{{ post.url }}">{{ post.title }}</a></h2>
-    {{ post.excerpt }}
-  </article>
-  <hr class="blog-sep"/>
+  <div class="posts">
+    <br />
+    {% for post in paginator.posts %}
+    <article class="row blog-post-index infinite-item">
+      <div class="blog-sep">{{ post.date | date_to_string }}</div>
+      <h2 class="blog-heading"><a href="{{%site.url}}{{ post.url }}">{{ post.title }}</a></h2>
+      <div class="infinite-item">{{ post.excerpt }}</div>
+    </article>
+    <hr class="blog-sep infinite-item"/>
   {% endfor %}
   </div>
 
   <div class="pagination">
-  {% if paginator.previous_page %}
-  <a href="{{site.url}}/blog/page{{ paginator.previous_page }}" class="previous">Previous</a>
-  {% else %}
+    {% if paginator.previous_page %}
+    <a href="{{site.url}}/blog/page{{ paginator.previous_page }}" class="previous">Previous</a>
+    {% else %}
     <span class="previous">Previous</span>
-  {% endif %}
-  <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
-  {% if paginator.next_page %}
-  <a href="{{site.url}}/blog/page{{ paginator.next_page }}" class="next infinite-more-link">Next</a>
-  {% else %}
+    {% endif %}
+    <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+    {% if paginator.next_page %}
+    <a href="{{site.url}}/blog/page{{ paginator.next_page }}" class="next infinite-more-link">Next</a>
+    {% else %}
     <span class="next">Next</span>
-  {% endif %}
+    {% endif %}
   </div>
 </section>
 

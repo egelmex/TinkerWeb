@@ -1,7 +1,7 @@
 <br />
 <div class="panel panel-default">
   <div class="panel-heading" data-toggle="collapse" data-target=".panel-group">
-    Posts by Year
+    <a href="#" class="accordion-toggle" data-toggle="collapse" data-target=".panel-group">Posts by Year</a>
     <div class="drop-down-button">
       <i class="glyphicon glyphicon-chevron-down glyphicon-chevron-up"></i>
     </div>
@@ -13,7 +13,7 @@
     <div class="panel panel-default" style="margin: 2px;">
       <div class="panel-heading">
 	<h4 class="panel-title" data-toggle="collapse" data-parent="#accordion" href="#c{{ year.first.first.date | date: "%Y" }}">
-	  <a class="accordion-toggle">
+	  <a class="accordion-toggle" data-toggle="collapse" data-parent"#accordion" href="#c{{ year.first.first.date | date: "%Y" }}">
 	    {{ year.first.first.date | date: "%Y" }}
 	  </a>
 	  <div class="drop-down-button">                                          
