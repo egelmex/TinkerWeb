@@ -15,7 +15,7 @@ postload:
     <article class="row blog-post-index infinite-item">
       <div class="blog-sep">{{ post.date | date_to_string }}</div>
       <h2 class="blog-heading"><a href="{{%site.url}}{{ post.url }}">{{ post.title }}</a></h2>
-      <div class="infinite-item">{{ post.excerpt }}</div>
+      <div>{{ post.excerpt }}</div>
     </article>
     <hr class="blog-sep infinite-item"/>
   {% endfor %}
