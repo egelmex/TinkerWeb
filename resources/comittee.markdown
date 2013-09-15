@@ -4,29 +4,73 @@ title: Your Committee
 categories: []
 tags: []
 status: draft
+postload: photos.js
 type: page
 ---
 
+<style>
+
+section figure {
+    float: left;
+    clear: both;
+    
+    position: relative;
+    overflow: auto;
+    
+    margin: 0 auto;
+    padding: 30px 0 0 0;
+    font-size: 15px;
+}
+
+section figure img {
+    vertical-align: bottom;
+}
+
+section figure figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    background: rgba(0,0,0,0.7);
+    text-align: center;
+    color: #fff; 
+    padding: 10px;
+}
+</style>
+
 {% row %}
-{% span 4 %}
+<section id="container" ".col-md-12">
+
+<figure class="item">
 {% picture committee/dan.jpg %}
+<figcaption>
 President - Daniel Knox
-{% endspan %}
+</figcaption>
+</figure>
 
-{% span 4 %}
+<figure class="item">
 {% picture committee/matt.jpg %}
+<figcaption>
 Treasurer - Matthew Prentice
-{% endspan %}
+</figcaption>
+</figure>
 
-{% span 4 %}
+<figure class="item">
 {% picture committee/berni.jpg %}
-Secretary - Berni Cross
-{% endspan %}
+<figcaption>
+Secretury - Berni Cross
+</figcaption>
+</figure>
 
-{% span 4 %}
+<figure class="item">
 {% picture committee/simon.jpg %}
+<figcaption>
 DogsBody - Simon Moore
-{% endspan %}
+</figcaption>
+</figure>
+
+</section>
 {% endrow %}
 
 <h2>The Fallen</h2>
