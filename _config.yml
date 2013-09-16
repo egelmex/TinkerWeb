@@ -13,6 +13,14 @@ picture:
   output: generated
   markup: "picturefill"
   presets:
+    face:
+      ppi: [1, 1.5]
+      attr:
+        class: face
+      source_default:
+        width: 240px
+        height: 240px
+
     default:
       ppi: [1, 1.5]
       attr:
