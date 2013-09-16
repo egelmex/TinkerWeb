@@ -1,8 +1,11 @@
 name: Your New Jekyll Site
 markdown: redcarpet
 pygments: true
-#paginate: 5
+paginate: 5
+paginate_path: "blog/page:num"
 brandname: TinkerSoc
+menufolders:
+ - /blog
 dropdowns:
  - Resources
 picture:
@@ -10,6 +13,14 @@ picture:
   output: generated
   markup: "picturefill"
   presets:
+    face:
+      ppi: [1, 1.5]
+      attr:
+        class: face
+      source_default:
+        width: 240px
+        height: 240px
+
     default:
       ppi: [1, 1.5]
       attr:
@@ -25,11 +36,14 @@ picture:
       attr:
         class: "img-carousel"
         itemprop: "image"
-      source_medium:
-        media: "(min-width: 40em)"
-        height: "500"
-      source_default: 
+      source_xs:
+        media: "(max-width: 480px)"
         width: "300"
+      source_sm:
+        media: "(min-width: 481px) and (max-width: 768px)"
+        width: "400"
+      source_default: 
+        width: "500"
     icon:
       ppi: [1, 1.5]
       attr:

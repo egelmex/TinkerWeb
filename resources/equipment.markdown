@@ -1,16 +1,46 @@
 ---
 layout: default 
-title: Resources
-categories: []
-tags: []
+title: Tools 
 status: publish
 type: page
 published: true
-meta:
-  _edit_last: '10'
-  _wp_page_template: default
 ---
-# Equipment #
+
+{% row %}
+
+
+
+{% span 4 pull-right %}
+{% well %}
+{% capture right %}
+# Borrowing Kit #
+You can borrow stuff from us for your personal projects, details 
+[here](/resources/borrowing-kit)
+
+# Group Orders #
+
+We are planning to do monthly batch orders from Farnell and Rapid Electronics,
+two major suppliers with minimum order restrictions. More info
+[here](/resources/group-order)
+
+# T.G.S.B.O.E.J #
+
+In the spirit of [The Great Internet Migratory Box Of Electronics
+Junk](http://tgimboej.org/Main_Page) we started the "TinkerSoc's Great Static
+Box of Electronic Junk" and it is pretty awesome (and static). Get in touch if
+you're interested!
+
+# Presentation Materials #
+ 
+The slides for the presentations can be found in our
+[slideshare](http://slideshare.net/tinkersoc) account, associated files can be
+found on [this wiki page](/wiki/presentations)
+{% endcapture %} {{ right | markdownify }}
+{% endwell %}
+{% endspan %}
+
+{% capture main %}
+# Tools/Equipment #
 
 We do have some of our own equipment, available for students to borrow. We
 don't have much, but we are working on developing the tools that we have
@@ -19,31 +49,43 @@ feeling very generous, donations are very welcome!
 
 For more information see bellow.
 
-## equipment that we have available to borrow:##
-Weller 1000wd Soldering Station and a variety of tips (kindly donated by Weller)
+## Equipment that we have available to borrow:##
+* Weller 1000wd Soldering Station and a variety of tips (kindly donated by Weller)
+* BnK Multimeter (Kindly donated by BnK)
+* BnK Desktop Power Supply (Kindly donated by BnK)
+* BnK Digital Osciliscope (Kindly donated by BnK)
+* Cutting Mats
+* Craft Knifes
+* Weller WD1000 Soldering Iron
+* Xytronic Soldering Station
+* Antex Temperature 200-450 Soldering Iron
+* Pro's Kit Tip Cleaner
+* Soldering Iron Stands
+* Duratool Solder Sucker
+* Pro's Kit Solder Sucker
+* Pro's Kit Solder Tool Kit
+* Solder Extractor Fans
+* 320 DMM (multimeter)
+* Patents and Design Wire Stripper
+* Duratool Precision Screwdriver Set
+* Helping Hands
+* Dremel Clamps
+* Bench Vices
+* Creative Live Cam (webcam)
 
-Cutting Mat's
-
-Craft Knife's
 
 ## Equipment we hope to provide in the future ##
 ## Electronics ##
 * Soldering
- * Helping hand magnifyer, led and solder stand
  * Flux Pen
  * Lead Solder
  * Solder Tips
- * Solder Tip Cleaner
  * Solder Wick
  * Gas Torch
 * PCB manufacturing -
  * Ferric Chloride
  * Acetone
  * A tray
-* Testing -
- * Multimeters
- * Oscilloscopes
- * Workbench Power Supplies
 * Miscellaneous -
  * Long nose pliers
  * Precision Tweezers
@@ -87,26 +129,5 @@ Craft Knife's
  * Small brass brush
  * Socket Set
  * Machine Oil
-
-# Borrowing Kit #
-You can borrow stuff from us for your personal projects, details 
-[here](/resources/borrowing-kit)
-
-# Group Orders #
-
-We are planning to do monthly batch orders from Farnell and Rapid Electronics,
-two major suppliers with minimum order restrictions. More info
-[here](/resources/group-order)
-
-# T.G.S.B.O.E.J #
-
-In the spirit of [The Great Internet Migratory Box Of Electronics
-Junk](http://tgimboej.org/Main_Page) we started the "TinkerSoc's Great Static
-Box of Electronic Junk" and it is pretty awesome (and static). Get in touch if
-you're interested!
-
-# Presentation Materials #
- 
-The slides for the presentations can be found in our
-[slideshare](http://slideshare.net/tinkersoc) account, associated files can be
-found on [this wiki page](/wiki/presentations)
+{% endcapture %} {{ main | markdownify }}
+{% endrow %}

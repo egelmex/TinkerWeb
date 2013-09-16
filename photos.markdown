@@ -5,7 +5,7 @@ categories: []
 tags: []
 status: publish
 type: page
-published: false
+published: true 
 postload: photos.js
 meta:
   _wp_page_template: full-width-page.php

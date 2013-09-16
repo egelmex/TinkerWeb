@@ -8,7 +8,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">TinkerSoc</a>
+	  <a class="navbar-brand" href="{{ site.url }}/">{{ site.brandname }}</a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
@@ -18,7 +18,7 @@
 						{% else %}
 						{% capture d %}{{ p.url | dir }}{% endcapture %}
 						{% capture f %}{{ p.url | basename }}{% endcapture %}
-						{% if d == "/" or f == "index.html" %}
+						{% if d == "/" or (f == "index.html" and (site.menufolders contains d)) %}
 
 								{% if page.title == p.title %}
 								<li class="active">

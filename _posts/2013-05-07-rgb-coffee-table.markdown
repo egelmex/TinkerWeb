@@ -1,5 +1,5 @@
 ---
-layout: blog 
+layout: post
 title: RGB Coffee Table.
 categories:
 - Builds
@@ -9,7 +9,8 @@ type: post
 published: true
 ---
 
-Want to build an RGB LED coffee table? Here's how you do it for £75! [youtube=http://www.youtube.com/watch?v=0ZUA9rlcdKs]
+Want to build an RGB LED coffee table? Here's how you do it for £75!
+{% youtube 0ZUA9rlcdKs %}
 
 
 {% row %}
