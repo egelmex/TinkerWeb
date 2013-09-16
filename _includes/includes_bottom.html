@@ -3,7 +3,19 @@
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
     <script src="{{ site.url }}/js/masonry.pkgd.min.js"></script>
     <script src="{{ site.url }}/js/picturefill.js"></script>
+    <script src="{{ site.url }}/js/jquery.gcal_flow.js"></script>
     {% for js in page.postload %}
     <script src="{{ site.url }}/js/{{ js }}"></script>
     {%endfor%}
-
+<script type="text/javascript">
+  $('#with-my-template').gCalFlow({
+    calid: 'tinkersoc.org_jgvajjns79sp34mvqntl81rub0@group.calendar.google.com',
+    mode: 'upcoming',
+    maxitem: 5,
+    auto_scroll: false,
+    date_formatter: function (date, allday_p) {
+      function pad(n) { return n < 10 ? "0"+n : n; }
+        return pad(date.getDate()) + "/" + pad(date.getMonth()+1) + "/" +  date.getFullYear().toString().substr(-2);
+    }
+  });
+</script>
