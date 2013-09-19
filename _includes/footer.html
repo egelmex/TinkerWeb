@@ -2,29 +2,29 @@
 <!-- Example row of columns -->
 {% row hidden-xs %}
 
-{% span 4 text-left%}
+{% span 4 text-left %}
 {% well %}
 {% include footer_left.html %}
 <!-- wha -->
 {% endwell %}
 {% endspan %}
 
-{% span 4 text-left%}
+{% span 4 text-left %}
 {% well %}
 {% capture FooterCenter %}
-{% include footer_center.markdown%}
+{% include footer_center.markdown %}
 {% endcapture %}
 {{ FooterCenter | markdownify }}
 {% endwell %}
 {% endspan %}
 
-{% span 4 text-left%}
+{% span 4 text-left %}
 {% well %}
 {% capture FooterRight %}
 {% include footer_right.markdown %}
 {% endcapture %}
 {{ FooterRight | markdownify }}
-{% endwell%}
+{% endwell %}
 {% endspan %}
 
 {% endrow %}
