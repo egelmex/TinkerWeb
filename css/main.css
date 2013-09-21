@@ -124,29 +124,6 @@ hr:after {
   margin: 0 auto;
 }
 
-.img-carousel {
-	width: 100%;
-	display: block;
-}
-
-.img-carousel img {
-	display: block;
-}
-
-.img-carousel img {
-	max-width: 100%;
-	margin: auto auto;
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	border-radius: 10px;
-}
-
-@media (max-width: 480px) {
-.img-carousel {
-	height: 225px;
-}
-}
-
 .navbar-brand {
 	position: relative;
 }
