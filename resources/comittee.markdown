@@ -41,7 +41,8 @@ section figure figcaption {
 
 {% row %}
 <section id="container" ".col-md-12">
-
+#The Committee#
+These are the people who run the society and make decisions on what to do. If you want to make a suggestion or contact the committee, please email committee @ tinkersoc.org
 <figure class="item">
 {% picture face committee/dan.jpg %}
 <figcaption>

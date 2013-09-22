@@ -3,45 +3,38 @@ layout: home
 title: Home
 weight: 1
 ---
-<!-- slide 1 -->
-<div class="active item">
-<div class="container">
-{% row %}
-{% span 6 %}
-{% capture slide1 %}
-#TinkerSoc#
-##Kent University's Maker Society##
 
-Tinkersoc is the society where we build, hack and (sometimes) blow things up.
-Tinkersoc is not just about electronics, although we do like our fair share of
-LEDS, it is a society that embraces all forms of technology, engineering and
-craft.
-
-So, if you have an interest in: building your own tube amp, getting a
-radio license, high powered burning lasers or you just want to learn design
-and solder a circuit.  Then this is the society for you!
-{% endcapture %}
-{{ slide1 | markdownify }}
-{% endspan %}
-
-{% span 6 %}
-{% picture carousel logo(2013)-transparent.png %}
-<!-- 1 -->
-{% endspan %}
-{% endrow %}
-</div>
-</div>
-
-
-<!-- slide2 -->
-<div class="item">
-<div class="container">
-{% row %}
-{% span 6 %}
-{% capture slide2 %}
-# TinkerSoc #
-
-Is for people who love to share their creativity with like minded people,
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active">
+          {% picture carousel arcade.jpg %}
+          <div class="container">
+            <div class="carousel-caption">
+	      {% span 6 hide-on-mobile pull-right col-md-4 col-sm-4 hidden-xs %}
+		  <!-- logo transparent -->
+	          {% picture logo(2013)-transparent.png %}
+	      {% endspan %}
+                  <h1>TinkerSoc</h1>
+	          <h2>Kent University's Maker Society</h2>
+	          <p>Tinkersoc is the society where we build, hack and (sometimes) blow things up. Tinkersoc is not just about electronics, although we do like our fair share of LEDS, it is a society that embraces all forms of technology, engineering and craft.</p>
+              <p><a class="btn btn-lg btn-primary pull-right" href="{{site.url}}/joinus.html" role="button">Sign up</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+	  {% picture carousel col.jpg %}
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>TinkerSoc</h1>
+              <p>Is for people who love to share their creativity with like minded people,
 and collaborate in designs and projects that are, simply, awesome.
 
 We bring together people from different backgrounds and skills to work 
@@ -49,16 +42,23 @@ together to MAKE things.
 
 We welcome everyone from every discipline, whether you are a Law student or an
 engineer we can guarantee you will learn something new and have fun in our
-events!
-{% endcapture %}
-{{ slide2 | markdownify }}
-{% endspan %}
-
-{% span 6 %}
-{% picture carousel col.jpg %}
-<!-- 2 -->
-{% endspan %}
-{% endrow %}
-</div>
-</div>
+events!</p>
+              <p><a class="btn btn-lg btn-primary pull-right" href="{{site.url}}/calendar.html" role="button">See our Calendar</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+	  {% picture carousel tinker-basic.jpg %}
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>TinkerSoc</h1>
+              <p>You can get an idea of the projects we do from our blog, where we write about what we're currently up to!</p>
+              <p><a class="btn btn-lg btn-primary pull-right" href="{{site.url}}/blog/" role="button">Read our Blog</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div><!-- /.carousel -->
 

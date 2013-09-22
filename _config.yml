@@ -31,6 +31,19 @@ picture:
         width: "600"
       source_default: 
         width: "300"
+    carousel-narow:
+      ppi: [1, 1.5]
+      attr:
+        class: "col-md-3 col-md-offset-6"
+        itemprop: "image"
+      source_xs:
+        media: "(max-width: 480)"
+        width: "240"
+      source_sm:
+        media: "(min-width: 481px) and (max-width: 768px)"
+        width: "384"
+      source_default:
+        width: "960"
     carousel:
       ppi: [1, 1.5]
       attr:
@@ -38,12 +51,12 @@ picture:
         itemprop: "image"
       source_xs:
         media: "(max-width: 480px)"
-        width: "300"
+        width: "480"
       source_sm:
         media: "(min-width: 481px) and (max-width: 768px)"
-        width: "400"
+        width: "768"
       source_default: 
-        width: "500"
+        width: "1920"
     icon:
       ppi: [1, 1.5]
       attr:
