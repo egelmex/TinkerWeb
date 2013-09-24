@@ -45,6 +45,7 @@ module Jekyll
     end
 
     def render(context)
+      @content = Liquid::Template.parse(super).render(context)
 <<-eos
 <div class="jumbotron #{@text}">
 <div class="container">
