@@ -37,6 +37,24 @@ eos
   end
 end
 
+module Jekyll 
+  class Jumbotron < Liquid::Block
+    def initialize(tag_name, text, tokens)
+      super
+      @text = text
+    end
+
+    def render(context)
+<<-eos
+<div class="jumbotron #{@text}">
+<div class="container">
+#{@content}    
+</div>
+</div>
+eos
+    end
+  end
+end
 
 module Jekyll
   class AlertBlock < Liquid::Block
@@ -100,6 +118,7 @@ end
 
 Liquid::Template.register_filter(Jekyll::BaseNameFilter)
 
+Liquid::Template.register_tag('jumbotron', Jekyll::Jumbotron)
 Liquid::Template.register_tag('span', Jekyll::SpanBlock)
 Liquid::Template.register_tag('row', Jekyll::RowBlock)
 Liquid::Template.register_tag('alert', Jekyll::AlertBlock)

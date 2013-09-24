@@ -3,7 +3,9 @@
 {% include header.html %}
 </style>
 
-{{ content }}
+{% include carousel.html %}
+
+{{ content | markdownify }}
 
 {% include footer.html %}
 {% include includes_bottom.html %}
