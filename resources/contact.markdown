@@ -6,24 +6,26 @@ tags: []
 status: publish
 type: page
 published: true
-weight: 0
 ---
+
+# Contact Us #
+
 There are several ways you can contact us...
 
-# Mail List #
+## Mail List ##
 
 To sign up to receive latest announcements please contact committee '@' tinkersoc.org
 
-# For last minute announcements and random updates follow [@tinkersoc](http://twitter.com/tinkersoc) on Twitter #
+## For last minute announcements and random updates follow [@tinkersoc](http://twitter.com/tinkersoc) on Twitter ##
 If you'd like us to follow you (we'd like to follow you!) then direct message us.
 
-# Good old fashioned email< #
+## Good old fashioned email ##
 
 If all else fails, or if you'd like to contact us directly, you can use the following email adresses to reach the comittee:
 
 * Daniel @ tinkersoc . org -- Daniel Knox, President
 * Matthew @ tinkersoc . org -- Matthew Prentice, Treasurer
-* martin @ tinkersoc . org -- Martin Ellis, Secretary
+* Berni @ tinkersoc . org -- Berni Cross, Secretary
 
 or, if you want to reach them all at once please use:
 
