@@ -16,6 +16,7 @@ section figure {
     
     position: relative;
     overflow: auto;
+    display: inline-block;
     
     margin: 0 auto;
     padding: 30px 0 0 0;
@@ -37,12 +38,27 @@ section figure figcaption {
     color: #fff; 
     padding: 10px;
 }
+
+section#container {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+@media (max-width: 768px) {
+section figure img {
+	width: 100%;
+}
+
+}
+
+
 </style>
 
-{% row %}
-<section id="container" ".col-md-12">
 #The Committee#
 These are the people who run the society and make decisions on what to do. If you want to make a suggestion or contact the committee, please email committee @ tinkersoc.org
+
+{% row %}
+<section id="container" class=".col-md-12">
 <figure class="item">
 {% picture face committee/dan.jpg %}
 <figcaption>
