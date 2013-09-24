@@ -10,7 +10,7 @@ dropdowns:
  - Resources
 picture:
   source: assets/images/_fullsize
-  output: generated
+  output: assets/images/generated
   markup: "picturefill"
   presets:
     face:

@@ -1,11 +1,11 @@
    
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-    <script src="{{ site.url }}/js/masonry.pkgd.min.js"></script>
-    <script src="{{ site.url }}/js/picturefill.js"></script>
-    <script src="{{ site.url }}/js/jquery.gcal_flow.js"></script>
+    <script src="{{ site.url }}/assets/js/masonry.pkgd.min.js"></script>
+    <script src="{{ site.url }}/assets/js/picturefill.js"></script>
+    <script src="{{ site.url }}/assets/js/jquery.gcal_flow.js"></script>
     {% for js in page.postload %}
-    <script src="{{ site.url }}/js/{{ js }}"></script>
+    <script src="{{ site.url }}/assets/js/{{ js }}"></script>
     {%endfor%}
 <script type="text/javascript">
   $('#with-my-template').gCalFlow({
