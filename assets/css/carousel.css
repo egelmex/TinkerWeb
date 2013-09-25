@@ -33,6 +33,10 @@
 	overflow: hidden;
 }
 
+.col-md-6 img {
+    max-height: 330px;
+}
+
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
