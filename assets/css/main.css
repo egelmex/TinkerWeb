@@ -124,25 +124,24 @@ hr:after {
   margin: 0 auto;
 }
 
+/** Navbar styling  **/
 .navbar-brand {
 	position: relative;
+	padding-left: 32px;
 }
 
-
-@media screen {
-.navbar-brand img {
-	display: none;		
-}
-}
-
-@media (min-width: 768px) {
 .navbar-brand img {
 	position: absolute;
-	left: -24px;
+	left: 0px;
 	top: 10px;
 	height: 32px;
 	display: block;
-		
+}
+
+@media (max-width: 767px) {
+.navbar-brand {
+	margin-left: 10px;
+
 }
 }
 
