@@ -5,7 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <meta property="og:image" content="{{ site.url }}/assets/images/facebook.png" />
+    {% if (page.featuredImage == "") or (page.featuredImage == null) %}
+    {% assign featuredImage='facebook.png' %}
+    {% else %}
+    {% assign featuredImage=page.featuredImage %}
+    {% endif %}
+    <meta property="og:image" content="{{ site.url }}/assets/images/{{featuredImage}}" />
+
     <!--<link rel="shortcut icon" href="../../assets/ico/favicon.png">-->
 
     <title>{{ site.brandname }} - {{page.title}}</title>
