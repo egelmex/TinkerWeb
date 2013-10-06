@@ -1,3 +1,33 @@
+@import url(http://fonts.googleapis.com/css?family=Patua+One);
+
+.err-fullscreenDiv {
+    background-color: #e8e8e8;
+    width: 100%;
+    height: auto;
+    bottom: 0px;
+    top: 0px;
+    left: 0;
+    position: absolute;
+}
+.err-center {
+    position: absolute;
+    text-align: center;
+    font-size: 8em;
+    font-family: 'Patua One', cursive;
+    height: 50px;
+    top: 35%;
+    left: 0;
+    right: 0;
+    margin-top: -25px;
+}
+.err-text {
+    font-size: 2em;
+    margin-top: 125px;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
 .post pre.terminal code {
   background-color: #333;
 }

@@ -1,0 +1,13 @@
+{% include imports_top.html %}
+{% include header.html %}
+<div id="shell">
+  <img src="{{site.url}}/assets/images/solder.png" width="1280" data-xrange="100" data-yrange="100" data-invert="true" id="solder"/>
+  <img src="{{site.url}}/assets/images/wire.png" width="1280" data-xrange="120" data-yrange="120" data-invert="true" id="wire"/>
+  <img src="{{site.url}}/assets/images/iron.png" width="1280" data-xrange="80" data-yrange="80" id="iron"/>
+</div>
+<div class="container">
+{% row %}
+		{{ content }}
+{% endrow %}
+</div>
+</html>

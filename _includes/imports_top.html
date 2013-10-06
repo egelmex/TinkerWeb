@@ -11,26 +11,77 @@
     <title>{{ site.brandname }} - {{page.title}}</title>
 
     <!-- Bootstrap core CSS -->
-<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" media="screen">
-<link href="{{ site.url }}/assets/css/main.css" rel="stylesheet" type="text/css" >
-<style>
-/* Move down content because we have a fixed navbar that is 50px tall */
-body {
-  padding-top: 50px;
-  padding-bottom: 20px;
-}
-</style>
-
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="{{ site.url }}/assets/css/main.css" rel="stylesheet" type="text/css" >
+    <style>
+      /* Move down content because we have a fixed navbar that is 50px tall */
+      body {
+      padding-top: 50px;
+      padding-bottom: 20px;
+      }
+    </style>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="{{site.url}}/assets/js/flax.js"></script>
     <!-- Custom styles for this template -->
     <!--   <link href="jumbotron.css" rel="stylesheet">-->
-
+    
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-      <script src="../../assets/js/html5shiv.js"></script>
-      <script src="../../assets/js/respond.min.js"></script>
-    <![endif]-->
+	<script src="../../assets/js/html5shiv.js"></script>
+	<script src="../../assets/js/respond.min.js"></script>
+	<![endif]-->
+    
+    
+    <style type="text/css">
+      html {
+      margin: 0px;
+      padding: 0px;
+      height: 100%
+      }
+      body {
+      background: #ebeae6;
+      position: relative;
+      height: 100%
+      }
+      div#shell {
+      display: block;
+      overflow: hidden;
+      position: relative;
+      margin: 0 auto;
+      width: 100%;
+      min-height: 100%;
+      }
+      div#shell{
+      z-index: 1;
+      width: 100%;
+      }
+      img#wire {
+      position: absolute;
+      left: -20%;
+      top: 25%;
+      width: 1280px;
+      z-index: 3;
+      }
+      img#solder {
+      position: absolute;
+      left: -10%;
+      top: 0%;
+      width: 1280px;
+      z-index: 2;
+      }
+      img#iron {
+      position: absolute;
+      left: 40%;
+      top: -40%;
+      width: 1280px;
+      z-index: 1;
+      } 
+    </style>
+    
+    <script type="text/javascript">
+      $(document).ready(function () {
+      $('#shell img').plaxify()
+      $.plax.enable()
+      })
+    </script>
   </head>
-
-  
-
-
