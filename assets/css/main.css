@@ -19,6 +19,7 @@
     left: 0;
     right: 0;
     margin-top: -25px;
+    z-index: 100;
 }
 .err-text {
     font-size: 2em;
@@ -26,6 +27,7 @@
     left: 0;
     right: 0;
     width: 100%;
+    z-index: 101;
 }
 
 .post pre.terminal code {
@@ -129,6 +131,58 @@ hr:after {
 .panel-title {
     background-color: #f5f5f5;
 }
+
+/** Error page styling */
+html {
+    margin: 0px;
+    padding: 0px;
+    height: 100%
+}
+
+body {
+    background: #ebeae6;
+    position: relative;
+    height: 100%
+}
+
+div#shell {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    min-height: 100%;
+}
+
+div#shell{
+    z-index: 1;
+    width: 100%;
+}
+
+img#wire {
+    position: absolute;
+    left: -20%;
+    top: 25%;
+    width: 1280px;
+    z-index: 3;
+}
+
+img#solder {
+    position: absolute;
+    left: -10%;
+    top: 0%;
+    width: 1280px;
+    z-index: 2;
+}
+
+img#iron {
+    position: absolute;
+    left: 40%;
+    top: -40%;
+    width: 1280px;
+    z-index: 1;
+}
+
 
 @media (max-width: 400px) {
 #container .item {
