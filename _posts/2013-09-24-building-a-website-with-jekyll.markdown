@@ -6,7 +6,7 @@ categories:
 tags: []
 status: publish
 type: post
-published: true
+published: false
 ---
 [B&amp;K Precision](http://www.bkprecision.com/) have kindly donated some
 awesome kit to TinkerSoc all the way from America. We will be teaching you how
@@ -18,17 +18,9 @@ We would like to send our warmest thanks to
 [B&amp;K Precision](http://www.bkprecision.com/) as we would never have been able to
 afford such awesome equipment from our budget.
 
-{% row %}
-{% span 6 %}
 {% picture 2013-08-02-bk-precisions-donation/2708B.jpg  %}
-<!-- col1 -->
-{% endspan %}
 
-{% span 6 %}
 {% picture 2013-08-02-bk-precisions-donation/1621A.jpg  %}
 
 {% picture 2013-08-02-bk-precisions-donation/2532B.jpg %}
-<!-- col2 -->
-{% endspan %}
 
-{% endrow %}
