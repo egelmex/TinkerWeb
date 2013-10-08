@@ -263,3 +263,8 @@
 })(function () {
   return typeof jQuery !== 'undefined' ? jQuery : ender
 }());
+
+$(document).ready(function () {
+    $('#shell img').plaxify()
+    $.plax.enable()
+})
