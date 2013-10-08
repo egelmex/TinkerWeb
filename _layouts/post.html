@@ -8,9 +8,11 @@ layout: default
                 <!-- a -->              
         {% endspan %}                   
         {% span 6 col-md-offset-0 %}
+	<article class="blog-post-index">
 	    <h2 class="blog-heading">{{ page.title }}</h2>      
 	    <p class="meta">{{ page.date | date_to_string }}</p>
             {{ content }}               
+        </article>
         {% endspan %}                   
         {% endrow %}                    
 </div>                                  
