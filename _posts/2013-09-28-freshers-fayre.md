@@ -10,4 +10,4 @@ Thanks to everyone that stopped by and had a look at the TinkerSoc stand at fres
 
 For those interested in how the furbys were controlled, we'll be writing up a report shortly. Watch this space! In the mean time, we post interesting maker things regularly to [Facebook](http://facebook.com/tinkersoc/) and [Twitter](http://twitter.com/tinkersoc/), so come like/follow us if you've not already.
 
-If you have any questions, they can be directed to the committee over facebook, or email. See the [Contact Us]({{site.url}}/resources/contact.html)age for more details on how to do that.
+If you have any questions, they can be directed to the committee over facebook, or email. See the [Contact Us]({{site.url}}/resources/contact.html) page for more details on how to do that.

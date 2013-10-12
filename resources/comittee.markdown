@@ -6,6 +6,8 @@ tags: []
 status: draft
 postload: photos.js
 type: page
+sitemap:
+    changefreq: monthly
 ---
 
 <style>
