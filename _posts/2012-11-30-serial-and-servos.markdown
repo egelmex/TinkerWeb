@@ -6,17 +6,18 @@ tags: []
 status: publish
 type: post
 published: true
-meta:
-  _edit_last: '12'
-  _wpas_done_all: '1'
 ---
 This week we looked at controlling servos over serial using the arduino.
 
-We started by making the servos move, by learning how to control them from Arduino.
+We started by making the servos move, by learning how to control them from
+Arduino.
 
-We then played around with the serial library for arduino and then learnt what classes, methods and variables were. We used the arduino to compare bytes of data coming in over serial to characters we'd defined in the program.
+We then played around with the serial library for arduino and then learnt what
+classes, methods and variables were. We used the arduino to compare bytes of
+data coming in over serial to characters we'd defined in the program.
 
-Once we had done this we put the two together, and hey-presto: serial controlled servos.
+Once we had done this we put the two together, and hey-presto: serial
+controlled servos.
 
 I've put the googledoc presentaion up here
 
