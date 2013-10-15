@@ -63,7 +63,7 @@ down.
 <!-- need to fix this -->
 {% endspan %}
 
-To attach the pieces together we used 1”x1” ledgers. Tinkersoc members would
+To attach the pieces together we used 1”x1” ledgers. TinkerSoc members would
 work out the length of ledger required and cut these from a length of 1”x1”
 strip wood. These were glued where a joint was required and then countersunk
 screws were used to securely fasten each piece. A diagram is shown below.
@@ -166,7 +166,7 @@ to ‘root = /dev/sda2’ (because parition two of the USB stick was raspbian’
 root partition). Now when the Pi is turned on, the kernel will launch for the
 boot partition on the SD card and then everything else is loaded from the USB
 stick. This proved to be far more reliable and gave us the benefit that changes
-could be made by most Tinkersoc members without the need for a SD card reader.
+could be made by most TinkerSoc members without the need for a SD card reader.
 
 The rest of the hardware setup is fairly standard. The Raspberry Pi has two USB
 ports. One has the arcade controller connected to it (appears as a single

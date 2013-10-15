@@ -7,6 +7,8 @@ status: publish
 type: page
 published: true
 weight: 0
+sitemap:
+    changefreq: monthly
 ---
 # Becoming a member #
 

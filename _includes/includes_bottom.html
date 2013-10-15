@@ -7,6 +7,8 @@
     {% for js in page.postload %}
     <script src="{{ site.url }}/assets/js/{{ js }}"></script>
     {%endfor%}
+
+{% if site.live %}
 <script type="text/javascript">
   $('#with-my-template').gCalFlow({
     calid: 'tinkersoc.org_jgvajjns79sp34mvqntl81rub0@group.calendar.google.com',
@@ -29,3 +31,4 @@
   ga('send', 'pageview');
 
 </script>
+{% endif %}

@@ -6,6 +6,8 @@ tags: []
 status: publish
 type: page
 published: true
+sitemap:
+    changefreq: monthly
 ---
 
 # Contact Us #

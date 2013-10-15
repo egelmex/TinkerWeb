@@ -7,10 +7,8 @@ status: publish
 type: page
 published: true 
 postload: photos.js
-meta:
-  _wp_page_template: full-width-page.php
-  _wpas_done_all: '1'
-  _edit_last: '12'
+sitemap:
+    changefreq: monthly
 ---
 <style>
 .gallery img {

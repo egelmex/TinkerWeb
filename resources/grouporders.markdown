@@ -6,9 +6,8 @@ tags: []
 status: publish
 type: page
 published: true
-meta:
-  _edit_last: '12'
-  _wp_page_template: default
+sitemap:
+    changefreq: monthly
 ---
 {% alert %} <strong>Warning:</strong> This page is not up to date. If you would like to order somethign please contact us as comittee @ tinkersoc.org {% endalert %}
 

@@ -6,6 +6,8 @@ tags: []
 status: publish
 type: page
 published: true
+sitemap:
+    changefreq: monthly
 ---
 Here you can view minutes from our General Meetings.
 ## November 2012 ##

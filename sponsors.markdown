@@ -6,6 +6,8 @@ tags: []
 status: publish
 type: page
 published: true
+sitemap:
+    changefreq: monthly
 ---
 We would like to thank those people/companies who have kindly sponsored TinkerSoc over the year! Their help has meant we have been able to do more awesome projects than we could otherwise consider.
 

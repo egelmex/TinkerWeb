@@ -4,6 +4,8 @@ title: Tools
 status: publish
 type: page
 published: true
+sitemap:
+    changefreq: monthly
 ---
 
 {% row %}
