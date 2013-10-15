@@ -26,14 +26,27 @@ The membership for the whole year is **£5 for Kent Students, and £7 for non-st
 {% well %}
 {% capture list %}
 # To become a member, please follow these steps. #
-
-1. Please sign up to the [Kent Union Website](http://www.kentunion.co.uk)
-2. Make sure you're logged in, then go to our [Group page](http://www.kentunion.co.uk/organisation/TinkerSoc) and click Add to Basket on Standard Membership (if you're a Kent student) or Associate Membership if you're not a member of Kent Union.
-3. You should then see a Basket appear on the right hand side of the page.  You can add more memberships to other societies at this point should you wish!  When you're done, click Review Basket, and then Proceed to Checkout.
-4. You'll then be asked to pay via debit or credit card.
-5. You’re now an Official TinkerSoc member!
 {% endcapture %}
 {{ list | markdownify }}
+<ol>
+<li>Please sign up to the <a href="http://www.kentunion.co.uk" target="_blank">Kent Union Website</a></li>
+<li>Make sure you're logged in, then go to our <a href=href="http://www.kentunion.co.uk/organisation/TinkerSoc" onClick="trackOutboundLink(this, 'Outbound Links', 'http://www.kentunion.co.uk/organisation/TinkerSoc'); return false;">Group page</a> and click Add to Basket on Standard Membership (if you're a Kent student) or Associate Membership if you're not a member of Kent Union.</li>
+<li>You should then see a Basket appear on the right hand side of the page.  You can add more memberships to other societies at this point should you wish!  When you're done, click Review Basket, and then Proceed to Checkout.</li>
+<li>You'll then be asked to pay via debit or credit card.</li>
+<li>You're now an Official TinkerSoc member!</li>
+</ol>
 {% endwell %}
 {% endspan %}
 {% endrow %}
+<!-- Google Analytics for clicking buttons -->
+<script type="text/javascript">
+function trackOutboundLink(link, category, action) {
+    try {
+        _gaq.push(['_trackEvent', category , action]);
+    } catch(err){}
+
+    setTimeout(function() {
+    document.location.href = link.href;
+    }, 100);
+}
+</script>
