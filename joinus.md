@@ -40,15 +40,3 @@ The membership for the whole year is **£5 for Kent Students, and £7 for non-st
 {% endwell %}
 {% endspan %}
 {% endrow %}
-<!-- Google Analytics for clicking buttons -->
-<script type="text/javascript">
-function trackOutboundLink(link, category, action) {
-    try {
-        _gaq.push(['_trackEvent', category , action]);
-    } catch(err){}
-
-    setTimeout(function() {
-    document.location.href = link.href;
-    }, 100);
-}
-</script>
