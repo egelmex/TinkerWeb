@@ -11,13 +11,13 @@
     <br />
     {% for year in site.years %}   
     <div class="panel panel-default" style="margin: 2px;">
-      <div class="panel-heading">
+      <div class="panel-heading" data-toggle="collapse" data-parent="#accordion">
 	<h4 class="panel-title" data-toggle="collapse" data-parent="#accordion" href="#c{{ year.first.first.date | date: "%Y" }}">
-	  <a class="accordion-toggle" data-toggle="collapse" data-parent"#accordion" href="#c{{ year.first.first.date | date: "%Y" }}">
+	  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#c{{ year.first.first.date | date: "%Y" }}">
 	    {{ year.first.first.date | date: "%Y" }}
 	  </a>
-	  <div class="drop-down-button">                                          
-	    <i class="glyphicon glyphicon-chevron-down glyphicon-chevron-up"></i> 
+	  <div class="drop-down-button" data-toggle="collapse" data-parent="#accordion">                                          
+	    <i class="glyphicon glyphicon-chevron-down glyphicon-chevron-up" data-toggle="collapse" data-parent="#accordion"></i> 
 	  </div>                                                                  
 	</h4>
       </div>

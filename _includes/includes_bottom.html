@@ -9,6 +9,7 @@
     {%endfor%}
 
 {% if site.live %}
+<!-- Google analytics for whole site -->
 <script type="text/javascript">
   $('#with-my-template').gCalFlow({
     calid: 'tinkersoc.org_jgvajjns79sp34mvqntl81rub0@group.calendar.google.com',
@@ -30,5 +31,18 @@
   ga('create', 'UA-44295824-1', 'tinkersoc.org');
   ga('send', 'pageview');
 
+</script>
+
+<!-- Google Analytics for clicking buttons -->
+<script type="text/javascript">
+function trackOutboundLink(link, category, action) {
+    try {
+        _gaq.push(['_trackEvent', category , action]);
+    } catch(err){}
+
+    setTimeout(function() {
+    document.location.href = link.href;
+    }, 100);
+}
 </script>
 {% endif %}
