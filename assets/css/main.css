@@ -77,9 +77,17 @@ img {
 }
 
 /* Blog post heading */
-.blog-heading{
+.blog-post-index h2 {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Georgia, serif;
+}
+
+.blog-heading {
     text-align: center;
     font-family: Georgia, serif;
+    font-weight: normal;
+    font-size: 30px;
 }
 
 .blog-heading a{
@@ -116,8 +124,8 @@ hr:after {
 
 /* Blog post exert style */
 .blog-post-index {
-    font-size: 1.3125em;
-    line-height: 1.52381em;
+    font-size: 1.15em;
+    line-height: 1.22381em;
     color: #111111;
     font-family: Georgia, serif;
     padding-left: 1em;
