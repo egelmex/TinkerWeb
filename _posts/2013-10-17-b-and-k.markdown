@@ -10,7 +10,6 @@ type: post
 
 {% picture 2013-10-17-b-and-k/IMG_20131016_204439.jpg %}
 
-# Reverse Engineering Furbies #
 ## ABSTRACT ##
 
 TinkerSoc is the ‘Maker’ society at the University of Kent;
@@ -37,13 +36,13 @@ it will be teaching that year. This year the committee chose
 to reverse engineer several Furbies [1] to be capable of singing
 in a ‘choir’. The aim of this project was to:
 
-• Demostrate that old electronic devices can be recycled
+* Demostrate that old electronic devices can be recycled
 for new use.
-• Understanding the role of components in a circuit and
+* Understanding the role of components in a circuit and
 how this produces the device’s intended function.
-• In the case of old, broken hardware, being able to iden-
+* In the case of old, broken hardware, being able to iden-
 tify the likely cause of the fault and rectify it.
-• Interfacing devices with a computer to further expand
+* Interfacing devices with a computer to further expand
 their capability.
 
 Because TinkerSoc is a student society, it frequently runs
@@ -58,11 +57,11 @@ personal tools.
 As such, TinkerSoc approach B&K Precision to help them
 rectify these problems in order to:
 
-• Provide members with access to high quality industry
+* Provide members with access to high quality industry
 hardware. 
-• Reduce the society’s dependency on members and Uni-
+* Reduce the society’s dependency on members and Uni-
 versity facilities.
-• Provide the ability for the society to engage with more
+* Provide the ability for the society to engage with more
 complex projects.
 
 ## 2. SOLUTION ##
@@ -88,7 +87,12 @@ invaluable when programming the Furby’s replacement mi-
 cro processor. Because the original IR diode was soldered
 directly to the original PCB, a replacement diode was used
 in combination with the scope to confirm that we had a suit-
-able replacement. Next a B&K 2708B auto-ranging multi-
+able replacement.
+
+
+{% picture 2013-10-17-b-and-k/osci.jpg %}
+
+Next a B&K 2708B auto-ranging multi-
 meter was used to test the main components on all of the
 Furbies that had been purchased for the project (5) to test
 their condition. Some Furby’s had suffered throughout the
@@ -163,6 +167,8 @@ the unit more closely and only paying attention to the back
 and the front of the unit. With the new fuse in place, the
 unit was performed brilliantly (particularly the fine voltage
 controls).
+
+{% picture 2013-10-17-b-and-k/P1010447.JPG %} 
 
 ## 3. CONCLUSSION ##
 
