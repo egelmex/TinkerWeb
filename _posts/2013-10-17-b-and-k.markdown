@@ -1,0 +1,185 @@
+---
+layout: post
+title: B&K help TinkerSoc build a furby choir. 
+categories:
+tags: []
+status: publish
+type: post
+excerpt:  This year the committee chose to reverse engineer several Furbies 1 to be capable of singing in a ‘choir’. 
+
+---
+
+# Reverse Engineering Furbies#
+{% picture 2013-10-17-b-and-k/IMG_20131016_204439.jpg %}
+
+## ABSTRACT ##
+
+TinkerSoc is the ‘Maker’ society at the University of Kent;
+it aims to teach its members basic skills in engineering, elec-
+tronics, computing and radio. As part of this, for a demon-
+stration project to start the new academic year, TinkerSoc
+wished to recycle a popular brand of toy released in 1999
+known as the Furby and reverse engineer a group of them
+into a choir. To do this, the society required tools and equip-
+ment that, as a student society, they would otherwise not
+have access to. Tinkersoc were only about to successfully
+complete this project thanks to a donation of a multi-meter,
+bench-top power supply, and oscillosocpe from B&K
+
+## 1. CHALLENGE ##
+
+TinkerSoc is the University of Kent’s ‘Maker’ society, it is
+predominantly an electronics society, but also engages with
+engineering and craft. The society is comprised of members
+from all levels of ability, but teaches electronics with the
+assumption of no experience. Each year, the society demon-
+strates a display project to highlight the types of things that
+it will be teaching that year. This year the committee chose
+to reverse engineer several Furbies 1 to be capable of singing
+in a ‘choir’. The aim of this project was to:
+
+• Demostrate that old electronic devices can be recycled
+for new use.
+• Understanding the role of components in a circuit and
+how this produces the device’s intended function.
+• In the case of old, broken hardware, being able to iden-
+tify the likely cause of the fault and rectify it.
+• Interfacing devices with a computer to further expand
+their capability.
+
+Because TinkerSoc is a student society, it frequently runs
+the sessions in the evenings, out of academic hours. This
+presents difficulties in terms of access to equipment because
+the university’s electronic labs will be closed. In the past,
+this has meant committee members supplied their own equip-
+ment to help out, but created an overdependence on a com-
+mittee that have and is happy to provide access to their own
+personal tools.
+
+As such, TinkerSoc approach B&K Precision to help them
+rectify these problems in order to:
+
+• Provide members with access to high quality industry
+hardware. [1]
+• Reduce the society’s dependency on members and Uni-
+versity facilities.
+• Provide the ability for the society to engage with more
+complex projects.
+
+## 2. SOLUTION ##
+
+In order to suceed in this project, the society first needed
+to anaylse the existing circuit board of the toy to understand
+the components provided functionality. Due to the age and
+popularity of the device, there are now numerous examples
+on the Internet of removing the device’s outer skin and map-
+ping of the main sensors. A single motor drives the original
+version of the Furby on a camsystem. The motor’s direc-
+tion is controlled by a H-Bridge. To tell the motor’s current
+position in relation to the camsystem, two components are
+used, an infrared opto-encoder and a home switch (a simple
+lever on the cam-system pushes this).
+
+To start this project, a functional Furby was first disman-
+tled and a donated B&K 2532B oscilloscope was used to
+view the pulses created by the opto-encoder. It was found
+that for each full revolution of the Furby’s cam-system, 200
+pulses were seen from the optoencoder; this knowledge was
+invaluable when programming the Furby’s replacement mi-
+cro processor. Because the original IR diode was soldered
+directly to the original PCB, a replacement diode was used
+in combination with the scope to confirm that we had a suit-
+able replacement. Next a B&K 2708B auto-ranging multi-
+meter was used to test the main components on all of the
+Furbies that had been purchased for the project (5) to test
+their condition. Some Furby’s had suffered throughout the
+years, but a majority had a complete set of use-able parts.
+At this point, the original PCB for each Furby was removed,
+leaving just the wires to the: opto-receiver, home switch and
+motor.
+
+{% picture 2013-10-17-b-and-k/P1010444_4000x3000.jpg %}
+
+The next stage of the project was to design a replacement
+PCB for the Furby. The chosen micro-processor for this
+project was an AtMega328 so that the Arduino environment
+would be available. To replace the original H-Bridge the
+SN754410 quad half h-bridge was selected [2] . This component
+required three digital pins (two of which were PWM) from
+the micro-processor. The Furby’s opto receiver required one
+digital pin that was capable of hardware interrupts and the
+home switch needed another digital pin; these were each
+attached to a pull-down resistor. A prototype board was
+produced and after a few problems (a shorted ground that
+from the computer via serial.
+
+To complete the project two pieces of software was pro-
+duced. The first was for the micro-processor on the Furby’s
+new PCB. This software would take the next available byte
+from the Serial Input buffer and use this as a goal position.
+It then checked to see if the motor was currently moving and
+if not, calculated the direction the motor would need to go
+in to get to the goal position as quickly as possible. The ap-
+propriate pins to control the motor were then raised HIGH;
+PWM was used to be able to speed control the motor (this
+proved useful as each Furby had its own ‘sweet spot’).
+To know what position the Furby’s cam was currently
+in and if it had reached its goal position, an interrupt was
+attached to the optoencoder. When the encoder’s interrupt
+fired, it would first check to see if the home button was
+currently being pressed (if so the camPosition would now be
+0), if it wasn’t then the interrupt would check what direction
+the motor was currently travelling in an either decrement or
+increment the position variable. As this variable was a byte
+we had 256 possible positions (0-255), however the Furby’s
+cam shaft system only has 0-199. Therefore, this interrupt
+also checked to see whether it should wrap around when
+incrementing or decrementing. Outside of this interrupt,
+if the Furby was currently attempting to move to a goal
+position, the software would currently be in a ‘while loop’,
+until the goal position was equal to the actual position of the
+cam; on which, the motor would then stop by using braking
+from the H-Bridge.
+
+The second piece of software was for the computer to con-
+trol multiple Furbies (to create the singing effect). This was
+written in JAVA and simply played an audio file of Queen’s
+‘bohemian rhapsody’. A CSV file contained a large amount
+of millisecond time points with goal positions for each Furby.
+This was imported into a queue in the JAVA program
+and a thread would check to see if the current audio file
+time matched another time point in the file; if so, this byte
+was sent down the serial line (for the appropriate Furby) by
+the RXTX library and the Furby then performed the action.
+Because of the number of Furby’s in use a reliable 5V
+power source was required (to not only drive all the Furby’s,
+but to also provide us with an idea that they are running
+well). A B&K 1621A digital power supply was used for this.
+This was easily able to keep up with the varying current
+draw of the Furby choir. One thing to note is the mains
+voltage selector is on the bottom of the unit (as we are from
+the UK, 220V, we got caught out at first and cost us a
+glass fuse!). However, it was our fault for not checking over
+the unit more closely and only paying attention to the back
+and the front of the unit. With the new fuse in place, the
+unit was performed brilliantly (particularly the fine voltage
+controls).
+
+## 3. CONCLUSSION ##
+
+With all these pieces in place the set of Furbies were
+able to sing their ballad (repeatedly) at the yearly ‘Fresher’s
+Faire’. Some of the Furby’s suffered malfunction after sev-
+eral hours of running, but we have yet to have the spare time
+to use the B&K oscilloscope to identify what is failing (we
+believe the ATmega328 and the H-Bridge should be better
+protected and likely fails after heavy use). We believe this
+project was a great success and most importantly, would not
+of been achievable without the great equipment donated by
+B&K. In the next few weeks, the society will be using this
+equipment heavily again so that each member can build a
+headphone tube amp.
+
+[1] A small animatronic hamster/owl that was popular in 1999.
+ 
+[2] The electronics drawers had many spare.the multimeter helped locate), the Furby was controllable. 
