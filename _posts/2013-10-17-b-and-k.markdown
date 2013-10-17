@@ -5,13 +5,12 @@ categories:
 tags: []
 status: publish
 type: post
-excerpt:  This year the committee chose to reverse engineer several Furbies 1 to be capable of singing in a ‘choir’. 
 
 ---
 
-# Reverse Engineering Furbies#
 {% picture 2013-10-17-b-and-k/IMG_20131016_204439.jpg %}
 
+# Reverse Engineering Furbies #
 ## ABSTRACT ##
 
 TinkerSoc is the ‘Maker’ society at the University of Kent;
@@ -35,7 +34,7 @@ from all levels of ability, but teaches electronics with the
 assumption of no experience. Each year, the society demon-
 strates a display project to highlight the types of things that
 it will be teaching that year. This year the committee chose
-to reverse engineer several Furbies 1 to be capable of singing
+to reverse engineer several Furbies [1] to be capable of singing
 in a ‘choir’. The aim of this project was to:
 
 • Demostrate that old electronic devices can be recycled
@@ -60,7 +59,7 @@ As such, TinkerSoc approach B&K Precision to help them
 rectify these problems in order to:
 
 • Provide members with access to high quality industry
-hardware. [1]
+hardware. 
 • Reduce the society’s dependency on members and Uni-
 versity facilities.
 • Provide the ability for the society to engage with more
