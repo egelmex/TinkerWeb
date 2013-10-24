@@ -83,6 +83,10 @@ img {
     font-family: Georgia, serif;
 }
 
+.blog-post-index img {
+    padding-top: 10px;
+}
+
 .blog-heading {
     text-align: center;
     font-family: Georgia, serif;
