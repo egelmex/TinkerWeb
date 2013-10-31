@@ -59,65 +59,24 @@ Precision to help them rectify these problems in order to:
 
 ## Solution ##
 
-In order to succeed in this project, the society first needed to
-analyse the existing circuit board of the toy to understand how the
-existing components provided functionality. Due to the age and
-popularity of the device, there are now numerous examples on the
-Internet of removing the device’s outer skin and a mapping of the main
-sensors. The original version of the Furby is driven by a single motor
-on a cam-shaft system. The motor’s direction is controlled by an
-electronic component known as a H-Bridge. To identify the motor’s
-current position in relation to its cam-shaft system, two additional
-components are used, an infared opto-encoder and a home switch (a
-simple lever that the cam-shaft pushes).
+In order to succeed in this project, the society first needed to analyse the
+existing circuit board of the toy to understand how the existing components
+provided functionality. Due to the age and popularity of the device, there are
+now numerous examples on the Internet of removing the device's outer skin and a
+mapping of the main sensors. A single motor drives the original version of the
+Furby on a cam-shaft system. The motor's direction is controlled by an
+electronic component known as a H-Bridge. To identify the motor's current
+position in relation to its camshaft system, two additional components are
+used, an infrared optoencoder and a home switch (a simple lever that the
+cam-shaft pushes).
 
-To start this project, a functional Furby was dismantled and a oscilloscope was
-used to view the pulses created by the opto-encoder. It was found that for each
-full revolution of the Furby’s cam-shaft system, 200 pulses were seen by the
-opto-encoder; this knowledge would become invaluable when programming the
-Furby’s replacement micro processor. Because the original infra-red diode was
-soldered directly to the original PCB, a It then checked to see if the motor
-was currently moving and if not, calculated the direction the motor would need
-to go in order to get to the goal position as quickly as possible (either
-forward or backwards). The appropriate pins to It then checked to see if the
-motor was currently moving and if not, calculated the direction the motor would
-need to go in order to get to the goal position as quickly as possible (either
-forward or backwards). The appropriate pins to control the motor were then
-raised HIGH; PWM was used to be able to speed control the motor (this proved
-useful as each Furby had its own ‘sweet spot’).
-
- To know what position the Furby’s cam was currently in and if it had reached
-its goal position, an interrupt handler was attached to the opto-encoder. When
-the encoder’s interupt ﬁred, it would ﬁrst check to see if the home button was
-currently being pressed (if so the camPosition would now be 0) and if it
-wasn’t, then the interrupt would check what direction the motor was currently
-travelling in and either decrement or increment the position variable. As this
-variable was a byte, we had 256 possible positions (0-255), however as
-previously described, the Furby’s cam-shaft system only has 0-199. Therefore,
-this interrupt also checked to see whether it should wrap around when
-incrementing or decrementing. Outside of this interrupt, if the Furby’s motor
-was currently moving, the software would be in a ‘while loop’; until the goal
-position was equal to the actual position of the cam, at this point the motor
-would then control the motor were then raised HIGH; PWM was used to be able to
-speed control the motor (this proved useful as each Furby had its own ‘sweet
-spot’).
-
-To know what position the Furby’s cam was currently in
-and if it had reached its goal position, an interrupt handler was
-attached to the opto-encoder. When the encoder’s interupt ﬁred, it
-would ﬁrst check to see if the home button was currently being pressed
-(if so the camPosition would now be 0) and if it wasn’t, then the
-interrupt would check what direction the motor was currently
-travelling in and either decrement or increment the position
-variable. As this variable was a byte, we had 256 possible positions
-(0-255), however as previously described, the Furby’s cam-shaft system
-only has 0-199. Therefore, this interrupt also checked to see whether
-it should wrap around when incrementing or decrementing. Outside of
-this interrupt, if the Furby’s motor was currently moving, the
-software would be in a ‘while loop’; until the goal position was equal
-to the actual position of the cam, at this point the motor would then
-replacement diode was used in combination with the scope to confirm
-that it was a suitable replacement.
+To start this project, a functional Furby was dismantled
+and an oscilloscope was used to view the pulses created by the optoencoder. It
+was found that for each full revolution of the Furby's camshaft system, 200
+pulses were seen by the optoencoder; this knowledge would become invaluable
+when programming the Furby's replacement microprocessor. Because the original
+infrared diode was soldered directly to the original PCB, a replacement diode
+was tested with the scope to confirm that it was a suitable replacement.
 
 {% picture 2013-10-17-b-and-k/osci.jpg %}
 
@@ -128,53 +87,49 @@ but a majority had a complete set of use-able parts. At this point,
 the original PCB for each Furby was removed, leaving just the wires
 that go to the opto-receiver, home switch and motor. 
 
-The next stage of
-the project was to design a replacement PCB for the Furby. The chosen
-micro-processor for this project was an AtMega328, this was so that
-the Arduino environment would be available. To replace the original
-HBridge, the SN754410 quad half h-bridge was selected[2]. This component
-required three digital pins, two of which were PWM, from the
-micro-processor. The Furby’s opto-reciever required a digital input
-pin that was capable of hardware interrupts and another digital input
-pin was needed by the home switch; these were each attached to a pull
-down resistor. A prototype board was produced and after a few problems
-(a shorted ground that the multimeter helped locate), the Furby was
-controllable from the computer via a serial interface. To complete the
-project two pieces of software were produced.
+The next stage of the project was to design a replacement PCB for the Furby.
+The chosen microprocessor for this project was an AtMega328, this was so that
+the Arduino environment would be available. To replace the original H-Bridge,
+the SN754410 quad half h-bridge was selected [2]. This component required three
+digital pins, two of which with PWM capability, from the microprocessor. The
+Furby's optoencoder required a digital input pin capable of hardware interrupts
+and the home switch needed another digital input pin; these were each attached
+to a pull-down resistor. A prototype board was produced and after a few
+problems (a shorted ground that the multimeter helped locate), the Furby was
+controllable from the computer via a serial interface.
 
-The first was for the micro-processor. This software would take the
-next available byte from the Serial Input Buffer and use this as a
-‘goal’ position.
+To complete the
+project two pieces of software was produced. The first was for the
+microprocessor. This software would take the next available byte from the
+Serial Input Buffer and use this as a `goal' position. 
 
 {% youtube M8IDlWM64Jc %}
 
 It then checked to see if the motor was currently moving and if not, calculated
 the direction the motor would need to go in order to get to the goal position
-as quickly as possible (either forward or backwards). The appropriate pins to
-control the motor were then raised HIGH; PWM was used to be able to speed
-control the motor (this proved useful as each Furby had its own
-‘sweet spot’). 
+as quickly as possible. The appropriate pins to control the motor were then
+raised HIGH; PWM was used to be able to speed control the motor (this proved
+useful as each Furby had its own `sweet spot'). 
 
-To know what position the Furby’s cam was currently in
-and if it had reached its goal position, an interrupt handler was
-attached to the opto-encoder. When the encoder’s interupt ﬁred, it
-would ﬁrst check to see if the home button was currently being pressed
-(if so the camPosition would now be 0) and if it wasn’t, then the
-interrupt would check what direction the motor was currently
-travelling in and either decrement or increment the position
-variable. As this variable was a byte, we had 256 possible positions
-(0-255), however as previously described, the Furby’s cam-shaft system
-only has 0-199. Therefore, this interrupt also checked to see whether
-it should wrap around when incrementing or decrementing. Outside of
-this interrupt, if the Furby’s motor was currently moving, the
-software would be in a ‘while loop’; until the goal position was equal
-to the actual position of the cam, at this point the motor would then
-stop by using braking from the H-Bridge. 
+To know what position the
+Furby's cam was currently in and if it had reached its goal position, an
+interrupt handler was attached to the optoencoder. When the encoder's interrupt
+fired, it would first check to see if the home button was currently being
+pressed (if so the camPosition would now be 0) and if it wasn't, then the
+interrupt would check what direction the motor was currently travelling in and
+either decrement or increment the position variable. As this variable was a
+byte, we had 256 possible positions (0-255), however as previously described,
+the Furby's camshaft system only has 200 per full rotation (0-199). Therefore,
+this interrupt also checked to see whether it should wrap around when
+incrementing or decrementing. Outside of this interrupt, if the Furby's motor
+was currently moving, the software would be in a `while loop'; until the goal
+position was equal to the actual position of the cam, at this point the motor
+would then stop by using braking from the H-Bridge.
 
-The second piece of software
-was for the computer to control multiple Furbies (to create the
-singing effect). This was written in JAVA and simply played an audio
-file of Queen’s ‘Bohemian Rhapsody’.
+
+The second piece of software was for the computer to control multiple Furbies
+(to create the singing effect). This was written in JAVA and simply played an
+audio file of Queen’s ‘Bohemian Rhapsody’.
 
 A CSV file containing a large amount of millisecond time points with
 goal positions for each Furby was produced.  This was imported into a
