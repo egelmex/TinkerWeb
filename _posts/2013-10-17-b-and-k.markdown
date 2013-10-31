@@ -15,19 +15,23 @@ TinkerSoc is the `Maker' society at the University of Kent, it aims to teach its
 ## Challenge ##
 TinkerSoc is the University of Kent’s ‘Maker’ society, it is predominantly an electronics society, but also actively engages with engineering and craft. The society is comprised of members from all levels of ability, but teaches electronics with the assumption of no experience. Each year, the society demonstrates a project that highlights the type of things that it will be teaching that year. This year, the committee chose to reverse engineer several Furbies1 to be capable of singing in a ‘choir’.
 The aim of this project was to: 
-+ Demonstrate that old electronic devices can be recycled for a new use. 
-+ Understand the role of components in a circuit and how this produces the device’s intended function. 
-+ In the case of old, broken hardware, being able to identify the likely cause of a fault and resolve it. 
-+ Interface devices with a computer to further expand their capability. 
+
+* Demonstrate that old electronic devices can be recycled for a new use.
+* Understand the role of components in a circuit and how this produces the device’s intended function.
+* In the case of old, broken hardware, being able to identify the likely cause of a fault and resolve it.
+* Interface devices with a computer to further expand their capability.
+
 Because TinkerSoc is a student society, it frequently runs the sessions in the evenings out of academic hours. This presents difficulties in terms of access to equipment, because the university’s electronic labs will be closed. In the past, this has meant committee members supply their own equipment to help out, but this creates an over-dependence on a committee that have, and is happy, to provide access to their own personal tools. As such, TinkerSoc approached B&K Precision to help them rectify these problems in order to: 
-+ Provide members with access to high quality hardware, as used in industry. 
-+ Reduce the society’s dependency on members bringing their own equipment and the university’s lab facilities. 
-+ Develop the ability for the society to engage with more complex projects. 
+
+* Provide members with access to high quality hardware, as used in industry. 
+* Reduce the society’s dependency on members bringing their own equipment and the university’s lab facilities. 
+* Develop the ability for the society to engage with more complex projects. 
+
 {% picture 2013-10-17-b-and-k/furby3.jpg %}
 
 ## Solution ##
 In order to succeed in this project, the society first needed to analyse the existing circuit board of the toy to understand how the existing components provided functionality. Due to the age and popularity of the device, there are now numerous examples on the Internet of removing the device’s outer skin and a mapping of the main sensors. The original version of the Furby is driven by a single motor on a cam-shaft system. The motor’s direction is controlled by an electronic component known as a H-Bridge. To identify the motor’s current position in relation to its cam-shaft system, two additional components are used, an infared opto-encoder and a home switch (a simple lever that the cam-shaft pushes). To start this project, a functional Furby was dismantled and a oscilloscope was used to view the pulses created by the opto-encoder. It was found that for each full revolution of the Furby’s cam-shaft system, 200 pulses were seen by the opto-encoder; this knowledge would become invaluable when programming the Furby’s replacement micro processor. Because the original infra-red diode was soldered directly to the original PCB, a replacement diode was used in combination with the scope to confirm that it was a suitable replacement. 
-
+{% picture 2013-10-17-b-and-k/osci.jpg %}
 Next, an auto-ranging multimeter was used to test the main components on all of the Furbies, that had been purchased for the project, to test their condition. Some Furby’s had suffered throughout the years, but a majority had a complete set of use-able parts. At this point, the original PCB for each Furby was removed, leaving just the wires that go to the opto-receiver, home switch and motor. The next stage of the project was to design a replacement PCB for the Furby. The chosen micro-processor for this project was an AtMega328, this was so that the Arduino environment would be available. To replace the original HBridge, the SN754410 quad half h-bridge was selected2. This component required three digital pins, two of which were PWM, from the micro-processor. The Furby’s opto-reciever required a digital input pin that was capable of hardware interrupts and another digital input pin was needed by the home switch; these were each attached to a pull down resistor. A prototype board was produced and after a few problems (a shorted ground that the multimeter helped locate), the Furby was controllable from the computer via a serial interface. To complete the project two pieces of software were produced. 
 
 The first was for the micro-processor. This software would take the next available byte from the Serial Input Buffer and use this as a ‘goal’ position.
@@ -50,4 +54,8 @@ Some more videos
 
 {% youtube H0NAQZcjhpY %}
 
+## Download Code ##
+Here's our code, all CC BY-NC-SA
 
++ [Java Program]({{site.url}}/assets/downloads/furbies.zip)
++ [Arduino Sketch]({{site.url}}/assets/downloads/furby.ino)
