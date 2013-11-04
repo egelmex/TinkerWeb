@@ -9,7 +9,7 @@
 	</li>
 
 	<li>
-		<a hrefp="http://flickr.com/groups/tinkersoc">
+		<a href="http://flickr.com/groups/tinkersoc">
 			<img src="{{site.url}}/assets/images/socialicons/flickr.png" style="height:1.5em"> Flickr Group
 		</a>
 	</li>
