@@ -89,6 +89,13 @@ DogsBody - Simon Moore
 </figcaption>
 </figure>
 
+<figure class="item">
+{% picture face committee/ben.jpg %}
+<figcaption>
+Mr CAD - Ben Adamson
+</figcaption>
+</figure>
+
 </section>
 {% endrow %}
 
