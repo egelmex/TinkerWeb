@@ -104,6 +104,14 @@ Wrong Uni Boy - Jordan Cook
 </figure>
 </section>
 
+<figure class="item">
+{% picture face committee/martin.jpg %}
+<figcaption>
+Mr BOOM - Martin Faulkner
+</figcaption>
+</figure>
+</section>
+
 {% endrow %}
 
 <h2>The Fallen</h2>
