@@ -96,7 +96,14 @@ Mr CAD - Ben Adamson
 </figcaption>
 </figure>
 
+<figure class="item">
+{% picture face committee/jordan.jpg %}
+<figcaption>
+Wrong Uni Boy - Jordan Cook
+</figcaption>
+</figure>
 </section>
+
 {% endrow %}
 
 <h2>The Fallen</h2>
