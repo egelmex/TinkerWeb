@@ -102,7 +102,6 @@ Mr CAD - Ben Adamson
 Wrong Uni Boy - Jordan Cook
 </figcaption>
 </figure>
-</section>
 
 <figure class="item">
 {% picture face committee/martin.jpg %}
