@@ -64,21 +64,21 @@ These are the people who run the society and make decisions on what to do. If yo
 <figure class="item">
 {% picture face committee/dan.jpg %}
 <figcaption>
-President - Daniel Knox
+<strong>President - Daniel Knox</strong>
 </figcaption>
 </figure>
 
 <figure class="item">
 {% picture face committee/matt.jpg %}
 <figcaption>
-Treasurer - Matthew Prentice
+<strong>Treasurer - Matthew Prentice</strong>
 </figcaption>
 </figure>
 
 <figure class="item">
 {% picture face committee/berni.jpg %}
 <figcaption>
-Secretary - Berni Cross
+<strong>Secretary - Berni Cross</strong>
 </figcaption>
 </figure>
 
