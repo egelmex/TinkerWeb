@@ -106,7 +106,7 @@ Wrong Uni Boy - Jordan Cook
 <figure class="item">
 {% picture face committee/martin.jpg %}
 <figcaption>
-Mr BOOM - Martin Faulkner
+Mr BOOM - [Martin Faulkner](www.martinfaulkner.co.uk)
 </figcaption>
 </figure>
 </section>
