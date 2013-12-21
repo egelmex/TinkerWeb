@@ -61,6 +61,14 @@ video {
     height: 100%;
 }
 
+/* Centered Image */
+.centeredImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
 /*******************************************************
  *
  *   BLOG INDEX PAGE
