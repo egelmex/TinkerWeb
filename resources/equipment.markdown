@@ -16,14 +16,14 @@ sitemap:
 {% well %}
 {% capture right %}
 # Borrowing Kit #
-You can borrow stuff from us for your personal projects, details 
-[here](/resources/borrowing-kit)
+You can borrow stuff from us for your personal projects. Just get in
+[contact](/resources/contact.html) with us and we'll see what we can do :)
 
 # Group Orders #
 
 We are planning to do monthly batch orders from Farnell and Rapid Electronics,
 two major suppliers with minimum order restrictions. More info
-[here](/resources/group-order)
+[here](resources/grouporders.html)
 
 # T.G.S.B.O.E.J #
 
@@ -33,10 +33,12 @@ Box of Electronic Junk" and it is pretty awesome (and static). Get in touch if
 you're interested!
 
 # Presentation Materials #
- 
-The slides for the presentations can be found in our
-[slideshare](http://slideshare.net/tinkersoc) account, associated files can be
-found on [this wiki page](/wiki/presentations)
+
+We have a [slideshare](http://www.slideshare.net/tinkersoc) account,
+though we currently don't update it with slides from each week. If
+you'd like a copy of slides from any week we can either email them to
+you or add them to [our blog](/2013/10/Introduction-to-arduino/).
+
 {% endcapture %} {{ right | markdownify }}
 {% endwell %}
 {% endspan %}
@@ -76,7 +78,7 @@ For more information see bellow.
 * Creative Live Cam (webcam)
 
 
-## Equipment we hope to provide in the future ##
+## Equipment we hope to provide in the future ##
 ## Electronics ##
 * Soldering
  * Flux Pen

@@ -71,7 +71,7 @@ These are the people who run the society and make decisions on what to do. If yo
 <figure class="item">
 {% picture face committee/matt.jpg %}
 <figcaption>
-<strong>Treasurer - Matthew Prentice</strong>
+<strong>Treasurer - <a href="http://theelectronicbyte.wordpress.com/">Matthew Prentice</a></strong>
 </figcaption>
 </figure>
 
@@ -85,7 +85,7 @@ These are the people who run the society and make decisions on what to do. If yo
 <figure class="item">
 {% picture face committee/simon.jpg %}
 <figcaption>
-DogsBody - Simon Moore
+DogsBody - <a href="http://graymalk.in/">Simon Moore</a>
 </figcaption>
 </figure>
 
@@ -106,19 +106,19 @@ Wrong Uni Boy - Jordan Cook
 <figure class="item">
 {% picture face committee/martin.jpg %}
 <figcaption>
-Mr BOOM - Martin Faulkner
+Mr BOOM - <a href="www.martinfaulkner.co.uk">Martin Faulkner</a>
 </figcaption>
 </figure>
 </section>
 
 {% endrow %}
 
-<h2>The Fallen</h2>
+##The Fallen##
 
 These brave men and women gave up their free time and sanity for tinkersoc and
 have since moved on to pastures green. They should not be forgotten.
 
-* **Omer Kilic** – Founder, President (2008/2009, 2009/2010)
+* <strong><a href="http://omer.me/">Omer Kilic</a></strong> – Founder, President (2008/2009, 2009/2010)
 * **Chris Roberts** – Founder, Vice-President (2008/2009, 2009/2010), President (2010/2011)
 * **Emma Johnson** – Founder, Treasurer (2008/2009, 2009/2010, 2010/2011, 2011/2012)
 * **Matt Medland** – Secretary (2009/2010), President(2011/2012)
