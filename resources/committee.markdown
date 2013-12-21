@@ -71,7 +71,7 @@ These are the people who run the society and make decisions on what to do. If yo
 <figure class="item">
 {% picture face committee/matt.jpg %}
 <figcaption>
-<strong>Treasurer - Matthew Prentice</strong>
+<strong>Treasurer - [Matthew Prentice](http://theelectronicbyte.wordpress.com/)</strong>
 </figcaption>
 </figure>
 
@@ -85,7 +85,7 @@ These are the people who run the society and make decisions on what to do. If yo
 <figure class="item">
 {% picture face committee/simon.jpg %}
 <figcaption>
-DogsBody - Simon Moore
+DogsBody - [Simon Moore](http://graymalk.in/)
 </figcaption>
 </figure>
 
@@ -118,7 +118,7 @@ Mr BOOM - Martin Faulkner
 These brave men and women gave up their free time and sanity for tinkersoc and
 have since moved on to pastures green. They should not be forgotten.
 
-* **Omer Kilic** – Founder, President (2008/2009, 2009/2010)
+* **(Omer Kilic)[http://omer.me/]** – Founder, President (2008/2009, 2009/2010)
 * **Chris Roberts** – Founder, Vice-President (2008/2009, 2009/2010), President (2010/2011)
 * **Emma Johnson** – Founder, Treasurer (2008/2009, 2009/2010, 2010/2011, 2011/2012)
 * **Matt Medland** – Secretary (2009/2010), President(2011/2012)
