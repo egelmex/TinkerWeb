@@ -64,7 +64,7 @@ These are the people who run the society and make decisions on what to do. If yo
 <figure class="item">
 {% picture face committee/dan.jpg %}
 <figcaption>
-<strong>President - Daniel Knox</strong>
+<strong>President - <a href="http://www.cs.kent.ac.uk/people/rpg/dk242/index.html">Daniel Knox</a></strong>
 </figcaption>
 </figure>
 
