@@ -7,7 +7,7 @@ catagories:
 tags: []
 ---
 
-The SOS Radio Week is an annual week of fund raising by amature radio
+The SOS Radio Week is an annual week of fund raising by amateur radio
 enthusiasts to ain the  [Royal National Lifeboat
 Institution](http://www.rnli.org.uk/) (RNLI) and has raised over £15,000 for
 the institution in the past 5 years.  On Saturday 25th January 2014 some
