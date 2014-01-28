@@ -38,10 +38,15 @@ module Jekyll
           i = 1
           posts = site.posts.select { |x| x.data['categories'] and x.data['categories'].map{|e| e.downcase}.include? category.downcase }
           posts.each_slice(5) do |y|
-            pagedir = (i == 1 ? dir : dir + "/page" + i)
+            filename = File.join(dir, category)
+            filename = (i == 1 ? filename : File.join(filename, ("/page#{i}")))
+            print("---")
+	    print(filename)
+            print("\n")
             print(posts)
             print("\n")
-            site.pages << CategoryPage.new(site, site.source, File.join(pagedir, category), category, posts)
+            site.pages << CategoryPage.new(site, site.source, filename, category, y)
+            i = i + 1
 	  end
         end
       end
