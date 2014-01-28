@@ -11,12 +11,8 @@ module Jekyll
       self.read_yaml(File.join(base, '_layouts'), 'category_index.html')
       self.data['category'] = category
 
-      print(category)
-      print("\n")
-
       category_posts = []
       site.posts.each do |p|
-	print(p.data['categories']) if p.data['categories']
         if p.data['categories']
           p.data['categories'].each do |x|
             (category_posts << p) if category.downcase == x.downcase
