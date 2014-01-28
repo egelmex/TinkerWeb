@@ -1,10 +1,11 @@
 module Jekyll
 
   class CategoryPage < Page
-    def initialize(site, base, dir, category)
+    def initialize(site, base, dir, category, posts)
       @site = site
       @base = base
       @dir = dir
+      @posts = posts
       @name = 'index.html'
 
       self.process(@name)
@@ -22,7 +23,8 @@ module Jekyll
 
       category_title_prefix = site.config['category_title_prefix'] || 'Category: '
       self.data['title'] = "#{category_title_prefix}#{category}"
-      self.data['posts'] = category_posts.reverse 
+      self.data['posts'] = @posts 
+ 
     end
   end
 
@@ -33,7 +35,14 @@ module Jekyll
       if site.layouts.key? 'category_index'
         dir = site.config['category_dir'] || 'categories'
         site.categories.keys.each do |category|
-          site.pages << CategoryPage.new(site, site.source, File.join(dir, category), category)
+          i = 1
+          posts = site.posts.select { |x| x.data['categories'] and x.data['categories'].map{|e| e.downcase}.include? category.downcase }
+          posts.each_slice(5) do |y|
+            pagedir = (i == 1 ? dir : dir + "/page" + i)
+            print(posts)
+            print("\n")
+            site.pages << CategoryPage.new(site, site.source, File.join(pagedir, category), category, posts)
+	  end
         end
       end
     end
