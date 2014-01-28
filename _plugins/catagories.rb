@@ -40,11 +40,6 @@ module Jekyll
           posts.each_slice(5) do |y|
             filename = File.join(dir, category)
             filename = (i == 1 ? filename : File.join(filename, ("/page#{i}")))
-            print("---")
-	    print(filename)
-            print("\n")
-            print(posts)
-            print("\n")
             site.pages << CategoryPage.new(site, site.source, filename, category, y)
             i = i + 1
 	  end
