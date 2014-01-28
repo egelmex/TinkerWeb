@@ -5,6 +5,8 @@ tags: []
 status: publish
 type: post
 published: true
+categories:
+ - Radio 
 ---
 Following the talk and practical session by the [Hilderstone Amateur Radio and Electronics club](http://www.g0hrs.org/pages/go.php) on Wednesday, we went to the Monkton Nature reserve (Sunday 20th October). There we erected our own portable antennae and did various practical tasks that are required for the [Foundation licence](http://rsgb.org/main/clubs-and-education/for-students/foundation/). 
 {% picture antenae.jpg %}

@@ -2,7 +2,7 @@
 title: SOS radio week. 
 layout: post
 published: true
-catagories:
+categories:
   - Radio
 tags: []
 ---

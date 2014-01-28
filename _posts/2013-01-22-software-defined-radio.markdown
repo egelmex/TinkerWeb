@@ -6,6 +6,8 @@ tags: []
 status: publish
 type: post
 published: true
+categories:
+ - Radio
 ---
 This week at TinkerSoc, Dan talked about Software Defined Radio. Software designed radio (SDR) has been around a while, but doing it cheaply at home has only recently happened. SDR removes the requirement of expensive hardware and allows someone with an antenna and some receiver hardware to receive signals and use their computer to do the difficult decoding bit.
 

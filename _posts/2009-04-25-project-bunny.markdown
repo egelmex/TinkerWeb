@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Project Bunny
-categories: []
+categories: 
+ - Builds
 tags: []
 status: publish
 type: post
