@@ -10,6 +10,9 @@ menufolders:
  - /blog
 dropdowns:
  - Resources
+
+category_dir: "blog"
+
 picture:
   source: assets/images/_fullsize
   output: assets/images/generated
