@@ -40,10 +40,10 @@ There are 3 licenses available in the UK, each builds on the last.
     - Allowed up to 10 watts of radio output
     - May not build own equiptment
     - May build equiptment from aproved kits
-- [Intermediate License](http://rsgb.org/main/clubs-training/fees/) (exam cost: £37.50)
+- [Intermediate License](http://rsgb.org/main/clubs-training/fees/) (exam cost: £32.50)
     - Allowed up to 50 watts of output 
     - May build own equiptment
-- [Advanced License](http://rsgb.org/main/clubs-training/fees/) (exam cost: £47.50)
+- [Advanced License](http://rsgb.org/main/clubs-training/fees/) (exam cost: £37.50)
     - Allowed up to 400 watts of output
     - May apply to use other bands
 
