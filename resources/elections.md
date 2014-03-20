@@ -52,9 +52,9 @@ The Treasurer manages the society’s finances. They are in charge of contacting
 potential sponsors and organise fundraising activities for the society. They
 are also responsible for the reimbursement of society members where
 appropriate.
-{% end capture %}
+{% endcapture %}
 {{ content | markdownify }}
-{% end span %}
+{% endspan %}
 
 {% span 4 %}
 ## Secretary ##
@@ -63,10 +63,10 @@ The Secretary's roll is to ensure the smooth running of the society. They are
 directly responsible for ensuring that regular meetings of the committee occur,
 and minutes are taken. They are responsible for ensuring there is a high level
 of communication between all members of the society and the union.
-{% end capture %}
+{% endcapture %}
 {{ content | markdownify }}
-{% end span %}
-{% end row %}
+{% endspan %}
+{% endrow %}
 
 {% row %}
 {% span 4 %}
@@ -76,9 +76,9 @@ of communication between all members of the society and the union.
 A new position on the committee. With the society’s growth into amateur radio,
 the Communications Officer is responsible for organising license courses and
 radio events. They are directly responsible to the President.
-{% end capture %}
+{% endcapture %}
 {{ content | markdownify }}
-{% end span %}
+{% endspan %}
 
 {% row %}
 {% span 4 %}
@@ -87,9 +87,9 @@ radio events. They are directly responsible to the President.
 
 The Media Officer is primarily in charge of all social communications for the
 society. They are responsible to the Secretary and assist them in their duties.
-{% end capture %}
+{% endcapture %}
 {{ content | markdownify }}
-{% end span %}
-{% end row %}
+{% endspan %}
+{% endrow %}
 
 
