@@ -37,9 +37,12 @@ run the society or activities.
 {{ content | markdownify }}
 {% endrow %}
 
+
+
+
 {% row %}
 {% span 4 %}
-{ capture content %}
+{% capture content %}
 # Terms of Reference #
 
 The President is responsible for guiding the society in the appropriate
