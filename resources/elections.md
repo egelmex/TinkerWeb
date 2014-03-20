@@ -45,7 +45,7 @@ run the society or activities.
 
 {% row %}
 
-{% span 4 %}
+{% span 6 %}
 
 {% capture content2 %}
 # Terms of Reference #
@@ -68,7 +68,7 @@ appropriate.
 
 
 
-{% span 4 %}
+{% span 6 %}
 
 {% capture content3 %}
 ## Secretary ##
@@ -90,7 +90,7 @@ of communication between all members of the society and the union.
 
 {% row %}
 
-{% span 4 %}
+{% span 6 %}
 
 {% capture content4 %}
 ## Communications Officer ##
@@ -103,7 +103,7 @@ radio events. They are directly responsible to the President.
 
 {% endspan %}
 
-{% span 4 %}
+{% span 6 %}
 
 {% capture content5 %}
 ## Media Officer ##
