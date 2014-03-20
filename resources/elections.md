@@ -8,7 +8,9 @@ type: page
 published: true
 weight: 1
 ---
-
+{% span 8 col-md-offset-2 %}
+{% row %}
+{% capture content %}
 # The Committee Positions #
 
 All student groups within [Kent Union](http://www.kentunion.co.uk) are operated
@@ -31,7 +33,13 @@ its activities.
 Non-voting officers are not elected by the society and so have no vote in
 committee meetings. These positions tend to be held by people who want to help
 run the society or activities.
+{% endcapture %}
+{{ content | markdownify }}
+{% endrow %}
 
+{% row %}
+{% span 4 %}
+{ capture content %}
 # Terms of Reference #
 
 The President is responsible for guiding the society in the appropriate
@@ -44,21 +52,44 @@ The Treasurer manages the society’s finances. They are in charge of contacting
 potential sponsors and organise fundraising activities for the society. They
 are also responsible for the reimbursement of society members where
 appropriate.
+{% end capture %}
+{{ content | markdownify }}
+{% end span %}
 
+{% span 4 %}
 ## Secretary ##
 
 The Secretary's roll is to ensure the smooth running of the society. They are
 directly responsible for ensuring that regular meetings of the committee occur,
 and minutes are taken. They are responsible for ensuring there is a high level
 of communication between all members of the society and the union.
+{% end capture %}
+{{ content | markdownify }}
+{% end span %}
+{% end row %}
 
+{% row %}
+{% span 4 %}
+{% capture content %}
 ## Communications Officer ##
 
 A new position on the committee. With the society’s growth into amateur radio,
 the Communications Officer is responsible for organising license courses and
 radio events. They are directly responsible to the President.
+{% end capture %}
+{{ content | markdownify }}
+{% end span %}
 
+{% row %}
+{% span 4 %}
+{% capture content %}
 ## Media Officer ##
 
 The Media Officer is primarily in charge of all social communications for the
 society. They are responsible to the Secretary and assist them in their duties.
+{% end capture %}
+{{ content | markdownify }}
+{% end span %}
+{% end row %}
+
+
