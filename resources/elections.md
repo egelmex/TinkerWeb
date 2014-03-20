@@ -27,7 +27,9 @@ running of the society.
 
 New to the society are the officer positions, *Comms officer and Media
 officer*. These may become additional voting officers, elected by the society
-at a GM. These positions tend to relate speciality to support the society and
+at a GM. These posit}
+{% span 4 %}
+ions tend to relate speciality to support the society and
 its activities.
 
 Non-voting officers are not elected by the society and so have no vote in
@@ -94,5 +96,5 @@ society. They are responsible to the Secretary and assist them in their duties.
 {{ content | markdownify }}
 {% endspan %}
 {% endrow %}
-
+{% endspan %}
 
