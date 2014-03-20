@@ -57,6 +57,7 @@ appropriate.
 {% endspan %}
 
 {% span 4 %}
+{% capture content %}
 ## Secretary ##
 
 The Secretary's roll is to ensure the smooth running of the society. They are
