@@ -84,7 +84,6 @@ radio events. They are directly responsible to the President.
 {{ content | markdownify }}
 {% endspan %}
 
-{% row %}
 {% span 4 %}
 {% capture content %}
 ## Media Officer ##
