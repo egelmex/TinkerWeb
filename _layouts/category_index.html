@@ -1,0 +1,18 @@
+---
+layout: blog 
+title: Blog
+---
+
+<section id="home">
+  <div class="posts">
+    <br />
+    {% for post in page.posts %}
+    <article class="row blog-post-index">
+      <div class="blog-sep">{{ post.date | date_to_string }}</div>
+      <h2 class="blog-heading"><a href="{{%site.url}}{{ post.url }}">{{ post.title }}</a></h2>
+      {{ post.excerpt }}
+    </article>
+  {% endfor %}
+  </div>
+
+</section>

@@ -6,6 +6,8 @@ tags: []
 status: publish
 type: post
 published: true
+categories:
+ - Builds
 ---
 Our current project at TinkerSoc is a full sized MAME Arcade Machine, we've
 done a lot so far and are nearly finished, but here's what we have now.
