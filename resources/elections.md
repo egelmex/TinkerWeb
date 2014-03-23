@@ -45,7 +45,7 @@ run the society or activities.
 
 {% row %}
 
-# Terms of Reference #
+<h1>Terms of Reference</h1>
 
 {% span 6 %}
 
