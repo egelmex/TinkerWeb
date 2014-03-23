@@ -22,7 +22,7 @@ The [TinkerSoc Committee](http://www.tinkersoc.org/resources/committee.html)
 consists of voting executive officers, voting officers, and non-voting officers
 as well.
 
-The executive positions are ** President, Secretary and Treasurer **. These are
+The executive positions are **President, Secretary and Treasurer**. These are
 the minimum 3 positions required by Kent Union. Executive officers are elected
 by the society at a General Meeting (GM) and are directly responsible for the
 running of the society.
@@ -49,6 +49,8 @@ run the society or activities.
 
 {% capture content2 %}
 # Terms of Reference #
+
+## President ##
 
 The President is responsible for guiding the society in the appropriate
 direction. They are responsible for coordinating the efforts of the committee
