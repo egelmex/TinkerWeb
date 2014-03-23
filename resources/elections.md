@@ -45,10 +45,11 @@ run the society or activities.
 
 {% row %}
 
+# Terms of Reference #
+
 {% span 6 %}
 
 {% capture content2 %}
-# Terms of Reference #
 
 ## President ##
 
