@@ -40,11 +40,7 @@ run the society or activities.
 
 {% endrow %}
 
-
-
-
 {% row %}
-
 <h1>Terms of Reference</h1>
 
 {% span 6 %}
