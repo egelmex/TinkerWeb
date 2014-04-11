@@ -70,7 +70,7 @@ These are the people who run the society and make decisions on what to do. If yo
 </figure>
 
 <figure class="item">
-{% picture face committee/nonmage.jpg %}
+{% picture face committee/noimage.jpg %}
 <figcaption>
 <strong>Treasurer - Christina Nutton</a></strong>
 <strong>treasurer@tinkersoc.org</strong>
