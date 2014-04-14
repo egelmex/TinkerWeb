@@ -65,7 +65,6 @@ These are the people who run the society and make decisions on what to do. If yo
 {% picture face committee/martin.jpg %}
 <figcaption>
 <strong>President - <a href="www.martinfaulkner.co.uk">Martin Faulkner</a></strong>
-<strong>president@tinkersoc.org</strong>
 </figcaption>
 </figure>
 
@@ -73,15 +72,13 @@ These are the people who run the society and make decisions on what to do. If yo
 {% picture face committee/noimage.jpg %}
 <figcaption>
 <strong>Treasurer - Christina Nutton</a></strong>
-<strong>treasurer@tinkersoc.org</strong>
 </figcaption>
 </figure>
 
 <figure class="item">
 {% picture face committee/matt.jpg %}
 <figcaption>
-<strong>Secretary - <a href="www.electronicbyte.cc">Matthew Prentice</strong>
-<strong>secretary@tinkersoc.org</strong>
+<strong>Secretary - <a href="http://www.electronicbyte.cc">Matthew Prentice></a></strong>
 </figcaption>
 </figure>
 
@@ -89,7 +86,6 @@ These are the people who run the society and make decisions on what to do. If yo
 {% picture face committee/noimage.jpg %}
 <figcaption>
 <strong>Radio Officer - Liam O'Brien</a>
-<strong>radio@tinkersoc.org</strong>
 </figcaption>
 </figure>
 
@@ -97,26 +93,8 @@ These are the people who run the society and make decisions on what to do. If yo
 {% picture face committee/noimage.jpg %}
 <figcaption>
 <strong>Media Officer - Kieran Twyford</a>
-<strong>media@tinkersoc.org</strong>
 </figcaption>
 </figure>
-
-<figure class="item">
-{% picture face committee/ben.jpg %}
-<figcaption>
-Mr CAD - Ben Adamson
-ben@tinkersoc.org
-</figcaption>
-</figure>
-
-<figure class="item">
-{% picture face committee/jordan.jpg %}
-<figcaption>
-Wrong Uni Boy - Jordan Cook
-jordan@tinkersoc.org
-</figcaption>
-</figure>
-
 {% endrow %}
 
 ##The Fallen##
@@ -130,5 +108,9 @@ have since moved on to pastures green. They should not be forgotten.
 * **Matt Medland** – Secretary (2009/2010), President(2011/2012)
 * **Martin Ellis** - Secretary (2010/2011, 2011/2012)
 * **Kezzy Robins** – Communications Officer (2010/2011)
-* **Daniel Knox** - President (2012/2013, 2013/2014)
+* **Jordan Cook** - Wrong Uni Boy (2013/2014)
+* **Ben Adamson** - Mr CAD (2013/2014)
+* **Berni Cross** - Secretary (2013/2014)
+* <strong><a href="http://graymalk.in/">Simon Cooksey</a></strong> - Dog's body (2012/2013, 2013/2014)
+* <strong><a href="http://www.cs.kent.ac.uk/people/rpg/dk242/">Daniel Knox</a></strong> - President (2012/2013, 2013/2014)
 
