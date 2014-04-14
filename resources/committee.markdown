@@ -62,30 +62,42 @@ These are the people who run the society and make decisions on what to do. If yo
 {% row %}
 <section id="container" class=".col-md-12">
 <figure class="item">
-{% picture face committee/dan.jpg %}
+{% picture face committee/martin.jpg %}
 <figcaption>
-<strong>President - <a href="http://www.cs.kent.ac.uk/people/rpg/dk242/index.html">Daniel Knox</a></strong>
+<strong>President - <a href="www.martinfaulkner.co.uk">Martin Faulkner</a></strong>
+<strong>president@tinkersoc.org</strong>
+</figcaption>
+</figure>
+
+<figure class="item">
+{% picture face committee/noimage.jpg %}
+<figcaption>
+<strong>Treasurer - Christina Nutton</a></strong>
+<strong>treasurer@tinkersoc.org</strong>
 </figcaption>
 </figure>
 
 <figure class="item">
 {% picture face committee/matt.jpg %}
 <figcaption>
-<strong>Treasurer - <a href="http://theelectronicbyte.wordpress.com/">Matthew Prentice</a></strong>
+<strong>Secretary - <a href="www.electronicbyte.cc">Matthew Prentice</strong>
+<strong>secretary@tinkersoc.org</strong>
 </figcaption>
 </figure>
 
 <figure class="item">
-{% picture face committee/berni.jpg %}
+{% picture face committee/noimage.jpg %}
 <figcaption>
-<strong>Secretary - Berni Cross</strong>
+<strong>Radio Officer - Liam O'Brien</a>
+<strong>radio@tinkersoc.org</strong>
 </figcaption>
 </figure>
 
 <figure class="item">
-{% picture face committee/simon.jpg %}
+{% picture face committee/noimage.jpg %}
 <figcaption>
-DogsBody - <a href="http://graymalk.in/">Simon Moore</a>
+<strong>Media Officer - Kieran Twyford</a>
+<strong>media@tinkersoc.org</strong>
 </figcaption>
 </figure>
 
@@ -93,6 +105,7 @@ DogsBody - <a href="http://graymalk.in/">Simon Moore</a>
 {% picture face committee/ben.jpg %}
 <figcaption>
 Mr CAD - Ben Adamson
+ben@tinkersoc.org
 </figcaption>
 </figure>
 
@@ -100,22 +113,15 @@ Mr CAD - Ben Adamson
 {% picture face committee/jordan.jpg %}
 <figcaption>
 Wrong Uni Boy - Jordan Cook
+jordan@tinkersoc.org
 </figcaption>
 </figure>
-
-<figure class="item">
-{% picture face committee/martin.jpg %}
-<figcaption>
-Mr BOOM - <a href="www.martinfaulkner.co.uk">Martin Faulkner</a>
-</figcaption>
-</figure>
-</section>
 
 {% endrow %}
 
 ##The Fallen##
 
-These brave men and women gave up their free time and sanity for tinkersoc and
+These brave men and women gave up their free time and sanity for TinkerSoc and
 have since moved on to pastures green. They should not be forgotten.
 
 * <strong><a href="http://omer.me/">Omer Kilic</a></strong> – Founder, President (2008/2009, 2009/2010)
@@ -124,4 +130,5 @@ have since moved on to pastures green. They should not be forgotten.
 * **Matt Medland** – Secretary (2009/2010), President(2011/2012)
 * **Martin Ellis** - Secretary (2010/2011, 2011/2012)
 * **Kezzy Robins** – Communications Officer (2010/2011)
+* **Daniel Knox** - President (2012/2013, 2013/2014)
 
