@@ -78,7 +78,7 @@ These are the people who run the society and make decisions on what to do. If yo
 <figure class="item">
 {% picture face committee/matt.jpg %}
 <figcaption>
-<strong>Secretary - <a href="http://www.electronicbyte.cc">Matthew Prentice></a></strong>
+<strong>Secretary - <a href="http://www.electronicbyte.cc">Matthew Prentice</a></strong>
 </figcaption>
 </figure>
 
