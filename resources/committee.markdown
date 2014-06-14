@@ -89,12 +89,6 @@ These are the people who run the society and make decisions on what to do. If yo
 </figcaption>
 </figure>
 
-<figure class="item">
-{% picture face committee/noimage.jpg %}
-<figcaption>
-<strong>Media Officer - Kieran Twyford</a>
-</figcaption>
-</figure>
 {% endrow %}
 
 ##The Fallen##
