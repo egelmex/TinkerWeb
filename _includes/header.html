@@ -1,4 +1,37 @@
  <body>
+<div id="blueimp-gallery" class="blueimp-gallery">
+    <!-- The container for the modal slides -->
+    <div class="slides"></div>
+    <!-- Controls for the borderless lightbox -->
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+    <!-- The modal dialog, which will be used to wrap the lightbox content -->
+    <div class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title"></h4>
+                </div>
+                <div class="modal-body next"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default pull-left prev">
+                        <i class="glyphicon glyphicon-chevron-left"></i>
+                        Previous
+                    </button>
+                    <button type="button" class="btn btn-primary next">
+                        Next
+                        <i class="glyphicon glyphicon-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
@@ -12,41 +45,34 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-					{% sorted_for p in site.pages sort_by:weight %}
-						{% if p.weight == 0 %}
-
-						{% else %}
-						{% capture d %}{{ p.url | dir }}{% endcapture %}
-						{% capture f %}{{ p.url | basename }}{% endcapture %}
-						{% if d == "/" or (f == "index.html" and (site.menufolders contains d)) %}
-
-								{% if page.title == p.title %}
-								<li class="active">
-								{% else %}
-								<li>
-								{% endif %}
-								<a href="{{ site.url }}{{ p.url}}">{{ p.title }}</a></li>
-							{% endif %}
-						{% endif %}
-					{% endsorted_for %}
-
-		{% for dropdown in site.dropdowns %}
-		<li class="dropdown">
-			<a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ dropdown }}<b class="caret"></b></a>
-			<ul class="dropdown-menu">
-					{% sorted_for p in site.pages sort_by:weight %}
-						{% if p.weight == 0 %}
-
-						{% else %}
-							{% capture d %}{{ p.url | dir }}{% endcapture %}
-							{% capture f %}{{ p.url | basename }}{% endcapture %}
-							{% capture dl %}/{{ dropdown | downcase }}{% endcapture %}
-							{% if d == dl %}
-								<li> <a href="{{ site.url }}{{ p.url}}">{{ p.title }}</a></li>
-							{% endif %}
-						{% endif %}
-					{% endsorted_for %}
-			</ul>
+					{% sorted_for p in site.pages sort_by:weight %}{%comment%}
+						{% endcomment%}{% if p.weight == 0 %}{% comment %}
+						{% endcomment %}{% else %} {%comment%}
+						{% endcomment %}{% capture d %}{{ p.url | dir }}{% endcapture %}{% comment %}
+						{% endcomment %}{% capture f %}{{ p.url | basename }}{% endcapture %}{% comment %}
+						{% endcomment %}{% if d == "/" or (f == "index.html" and (site.menufolders contains d)) %}{%comment%}
+								{%endcomment%}{% if page.title == p.title %}{%comment%}
+								{%endcomment%}<li class="active">{%comment%}
+								{%endcomment%}{% else %}{%comment%}
+								{%endcomment%}<li>{%comment%}
+								{%endcomment%}{% endif %}{%comment%}
+								{%endcomment%}<a href="{{ site.url }}{{ p.url}}">{{ p.title }}</a></li>{%comment%}
+							{%endcomment%}{% endif %}{%comment%}
+						{%endcomment%}{% endif %}{%comment%}
+					{% endcomment %}{% endsorted_for %}{%comment%}}
+					{%endcomment%}{% for dropdown in site.dropdowns %}{%comment%}
+			{%endcomment%}<li class="dropdown">{%comment%}
+			{%endcomment%}<a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ dropdown }}<b class="caret"></b></a>{%comment%}
+			{%endcomment%}<ul class="dropdown-menu">{%comment%}
+					{%endcomment%}{% sorted_for p in site.pages sort_by:weight %}{%comment%}
+						{%endcomment%}{% if p.weight == 0 %}{% else %}{%comment%}
+						{%endcomment%}{% capture d %}{{ p.url | dir }}{% endcapture %}{%comment%}
+							{%endcomment%}{% capture f %}{{ p.url | basename }}{% endcapture %}{%comment%}
+							{%endcomment%}{% capture dl %}/{{ dropdown | downcase }}{% endcapture %}{%comment%}
+							{%endcomment%}{% if d == dl %} <li> <a href="{{ site.url }}{{ p.url}}">{{ p.title }}</a></li> {% endif %}{%comment%}
+						{%endcomment%}{% endif %}{%comment%}
+					{%endcomment%}{% endsorted_for %}{%comment%}
+			{%endcomment%}</ul>
 		</li>
 		{% endfor %}
           </ul>
