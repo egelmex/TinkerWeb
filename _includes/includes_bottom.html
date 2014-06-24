@@ -1,16 +1,16 @@
-   
-    <script async src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-    <script async src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-    <script async src="{{ site.url }}/assets/js/masonry.pkgd.min.js"></script>
-    <script async src="{{ site.url }}/assets/js/picturefill.js"></script>
-    <script async src="{{ site.url }}/assets/js/jquery.gcal_flow.js"></script>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="{{ site.url }}/assets/js/masonry.pkgd.min.js"></script>
+    <script src="{{ site.url }}/assets/js/picturefill.js"></script>
+    <script src="{{ site.url }}/assets/js/jquery.gcal_flow.js"></script>
     {% for js in page.postload %}
-    <script async src="{{ site.url }}/assets/js/{{ js }}"></script>
+    <script src="{{ site.url }}/assets/js/{{ js }}"></script>
     {%endfor%}
 
 {% if site.live %}
 <!-- Google analytics for whole site -->
-<script async type="text/javascript">
+<script type="text/javascript">
   $('#with-my-template').gCalFlow({
     calid: 'tinkersoc.org_jgvajjns79sp34mvqntl81rub0@group.calendar.google.com',
     mode: 'upcoming',
@@ -34,7 +34,7 @@
 </script>
 
 <!-- Google Analytics for clicking buttons -->
-<script async type="text/javascript">
+<script type="text/javascript">
 function trackOutboundLink(link, category, action) {
     try {
         _gaq.push(['_trackEvent', category , action]);
