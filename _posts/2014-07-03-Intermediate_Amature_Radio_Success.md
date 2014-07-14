@@ -6,7 +6,7 @@ categories:
   - Radio
 tags: []
 ---
-On Thursday 3rd July 2014, three Members of [TinkerSoc](http://www.tinkersoc.org]
+On Thursday 3rd July 2014, three Members of [TinkerSoc](http://www.tinkersoc.org)
 travelled to Broadstairs to join members of the [Hilderstone Amateur Radio and
 Electronics club](http://www.g0hrs.org/) in sitting their Intermediate Amature Radio
 licence.  Over the past 4 months they have taken part in an web based course to learn the theory behind RF circuit design and operation. 
