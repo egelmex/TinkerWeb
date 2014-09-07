@@ -15,9 +15,10 @@ sitemap:
 	width: 240px;
 }
 </style>
-
-<div class="row">
-<div id="container">
+{% if page.published == true %}
+{% span 12 %}
+<div class="text-center" style="width:100%">
+{% flickr_set 72157635467790779 %}
 </div>
-</div>
-
+{% endspan %}
+{% endif %}
