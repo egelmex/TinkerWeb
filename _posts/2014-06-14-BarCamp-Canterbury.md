@@ -5,7 +5,7 @@ published: true
 categories: []
 tags: []
 ---
-<img src="{{site.url}}/assets/images/2014-06-14-BarCamp-Canterbury/barcamp.svg" alt="BarCamp Logo" />
+{% picture 2014-06-14-BarCamp-Canterbury/barcamp.png%}
 TinkerSoc is going to be hosting a learn-to-solder Session at this
 year's [BarCamp Canterbury](http://barcampcanterbury.com/). For those
 who are unfamilar with BarCamp: BarCamp is an **unconference** that is
