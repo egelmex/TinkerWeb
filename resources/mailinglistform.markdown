@@ -12,7 +12,7 @@ sitemap:
 
 {% capture main %}
 
-<iframe src="https://docs.google.com/forms/d/16eMjOxtQIsEv2DrMluxnfZ3FqDb1oGyCzLOT9XiGP4M/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+<iframe src="https://docs.google.com/forms/d/16eMjOxtQIsEv2DrMluxnfZ3FqDb1oGyCzLOT9XiGP4M/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0" style="width: 100%; min-height: 100%;">Loading...</iframe>
 
 {% endcapture %} {{ main | markdownify }}
 {% endrow %}

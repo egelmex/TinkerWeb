@@ -92,10 +92,10 @@ of communication between all members of the society and the union.
 {% span 6 %}
 
 {% capture content4 %}
-## Communications Officer ##
+## Radio Officer ##
 
 A new position on the committee. With the society’s growth into amateur radio,
-the Communications Officer is responsible for organising license courses and
+the Radio Officer is responsible for organising license courses and
 radio events. They are directly responsible to the President.
 {% endcapture %}
 {{ content4 | markdownify }}
