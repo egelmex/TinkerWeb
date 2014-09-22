@@ -62,23 +62,23 @@ These are the people who run the society and make decisions on what to do. If yo
 {% row %}
 <section id="container" class=".col-md-12">
 <figure class="item">
-{% picture face committee/martin.jpg %}
+{% picture face committee/matt.jpg %}
 <figcaption>
-<strong>President - <a href="www.martinfaulkner.co.uk">Martin Faulkner</a></strong>
+<strong>President - <a href="http://www.electronicbyte.cc">Matthew Prentice</a></strong>
 </figcaption>
 </figure>
 
 <figure class="item">
-{% picture face committee/noimage.jpg %}
+{% picture face committee/christina.jpg %}
 <figcaption>
 <strong>Treasurer - Christina Nutton</a></strong>
 </figcaption>
 </figure>
 
 <figure class="item">
-{% picture face committee/matt.jpg %}
+{% picture face committee/jodie.jpg %}
 <figcaption>
-<strong>Secretary - <a href="http://www.electronicbyte.cc">Matthew Prentice</a></strong>
+<strong>Secretary - Jodie Perry</a></strong>
 </figcaption>
 </figure>
 
@@ -86,6 +86,27 @@ These are the people who run the society and make decisions on what to do. If yo
 {% picture face committee/noimage.jpg %}
 <figcaption>
 <strong>Radio Officer - Liam O'Brien</a>
+</figcaption>
+</figure>
+
+<figure class="item">
+{% picture face committee/ben.jpg %}
+<figcaption>
+<strong>Media Officer - Ben Adamson</a>
+</figcaption>
+</figure>
+
+<figure class="item">
+{% picture face committee/martin.jpg %}
+<figcaption>
+<strong>Officer - <a href="www.martinfaulkner.co.uk">Martin Faulkner</a>
+</figcaption>
+</figure>
+
+<figure class="item">
+{% picture face committee/robert.jpg %}
+<figcaption>
+<strong>Officer - Robert Meekings</a>
 </figcaption>
 </figure>
 
