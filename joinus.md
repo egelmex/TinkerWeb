@@ -18,7 +18,7 @@ sitemap:
 {% capture right %}
 If you’ve popped into any of our workshops and enjoyed it and would like to see more in the future, we'd ask you to become an official supporting member of TinkerSoc! The more members that sign up, the more funding from the Union we get, which equals more events including workshops and socials!
 
-The membership for the whole year is **£5 for Kent Students, and £7 for non-students**. This membership fee covers many of our events entirely, including all of the talks. However, we may need to charge for certain kits and materials required to participate in workshops. Don’t worry though, we will make sure you know this well in advance and will try to keep the price for one workshop under £5 where possible.
+The membership for the whole year is **£10 for Kent Students, and £13 for non-students**. This membership fee covers many of our events entirely, including all of the talks. However, we may need to charge for certain kits and materials required to participate in workshops. Don’t worry though, we will make sure you know this well in advance and will try to keep the price for one workshop under £5 where possible.
 {% endcapture %}
 {{ right | markdownify }}
 
