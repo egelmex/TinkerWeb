@@ -83,7 +83,7 @@ These are the people who run the society and make decisions on what to do. If yo
 </figure>
 
 <figure class="item">
-{% picture face committee/noimage.jpg %}
+{% picture face committee/liam.jpg %}
 <figcaption>
 <strong>Radio Officer - Liam O'Brien</a>
 </figcaption>
