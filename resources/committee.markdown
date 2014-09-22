@@ -99,7 +99,7 @@ These are the people who run the society and make decisions on what to do. If yo
 <figure class="item">
 {% picture face committee/martin.jpg %}
 <figcaption>
-<strong>Officer - <a href="www.martinfaulkner.co.uk">Martin Faulkner</a>
+<strong>Officer - <a href="http://www.martinfaulkner.co.uk">Martin Faulkner</a>
 </figcaption>
 </figure>
 
