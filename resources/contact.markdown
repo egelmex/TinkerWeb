@@ -46,9 +46,13 @@ If you'd like us to follow you on twitter (we'd like to follow you!), then direc
 
 If you'd like to contact us directly, you can use the following email adresses to reach the comittee:
 
-* Daniel @ tinkersoc . org -- Daniel Knox, President
-* Matthew @ tinkersoc . org -- Matthew Prentice, Treasurer
-* Berni @ tinkersoc . org -- Berni Cross, Secretary
+* Matthew @ tinkersoc . org -- Matthew Prentice, President
+* Christina @ tinkersoc . org -- Christina Nutton, Treasurer
+* Jodie @ tinkersoc . org -- Jodie Perry, Secretary
+* Liam @ tinkersoc . org -- Liam O'Brien, Radio Officer
+* Ben @ tinkersoc . org -- Ben Adamson, Media Officer
+* Robert @ tinkersoc . org -- Robert Meekings, Officer
+* Martin.Faulkner @ tinkersoc . org -- Martin Faulkner, Officer
 
 or, if you want to reach us all at once please use:
 
