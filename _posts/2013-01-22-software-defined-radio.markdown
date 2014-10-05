@@ -60,7 +60,7 @@ That streams this to a listening port of 8001 for another program to remotely co
 </tr>
 <tr>
 <td><a title="ve3sqb" href="http://www.ve3sqb.com/" target="_blank">ve3sqb</a></td>
-<td>A site with free programs to design antennas, we went with a discone, because they are&nbsp;inherently&nbsp;wide band</td>
+<td>A site with free programs to design antennas, we went with a discone, because they are inherently wide band</td>
 <td><a title="ve3sqb" href="http://www.ve3sqb.com/" target="_blank">Windows, but should run under Wine</a></td>
 </tr>
 <tr>
