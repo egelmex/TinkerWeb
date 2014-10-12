@@ -124,7 +124,6 @@ have since moved on to pastures green. They should not be forgotten.
 * **Martin Ellis** - Secretary (2010/2011, 2011/2012)
 * **Kezzy Robins** – Communications Officer (2010/2011)
 * **Jordan Cook** - Wrong Uni Boy (2013/2014)
-* **Ben Adamson** - Mr CAD (2013/2014)
 * **Berni Cross** - Secretary (2013/2014)
 * <strong><a href="http://graymalk.in/">Simon Cooksey</a></strong> - Dog's body (2012/2013, 2013/2014)
 * <strong><a href="http://www.cs.kent.ac.uk/people/rpg/dk242/">Daniel Knox</a></strong> - President (2012/2013, 2013/2014)
