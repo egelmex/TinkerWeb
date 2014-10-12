@@ -216,9 +216,6 @@ img#iron {
 @media (min-width: 400px) {
 #container .item {
 	width:240px;
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	border-radius: 10px;
 	margin:10px;
 	border-color:black;
 }
