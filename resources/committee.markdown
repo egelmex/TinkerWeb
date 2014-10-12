@@ -59,56 +59,24 @@ section figure img {
 #The Committee#
 These are the people who run the society and make decisions on what to do. If you want to make a suggestion or contact the committee, please email committee @ tinkersoc.org
 
-{% row %}
 <section id="container" class=".col-md-12">
+{% row %}
+{% for committeemem in site.data.committee.current_committee %}
+
 <figure class="item">
-{% picture face committee/matt.jpg %}
+{% picture face {{committeemem.image}} %}
 <figcaption>
-<strong>President - <a href="http://www.electronicbyte.cc">Matthew Prentice</a></strong>
+
+{% if committeemem.url == null %}
+<strong>{{ committeemem.comment }} - {{committeemem.name}}</strong>
+{% else %}
+<strong>{{ committeemem.comment }} - <a href="{{committeemem.url}}">{{committeemem.name}}</a></strong>
+{% endif %}
 </figcaption>
 </figure>
 
-<figure class="item">
-{% picture face committee/christina.jpg %}
-<figcaption>
-<strong>Treasurer - Christina Nutton</a></strong>
-</figcaption>
-</figure>
-
-<figure class="item">
-{% picture face committee/jodie.jpg %}
-<figcaption>
-<strong>Secretary - Jodie Perry</a></strong>
-</figcaption>
-</figure>
-
-<figure class="item">
-{% picture face committee/liam.jpg %}
-<figcaption>
-<strong>Radio Officer - Liam O'Brien</a>
-</figcaption>
-</figure>
-
-<figure class="item">
-{% picture face committee/ben.jpg %}
-<figcaption>
-<strong>Media Officer - Ben Adamson</a>
-</figcaption>
-</figure>
-
-<figure class="item">
-{% picture face committee/martin.jpg %}
-<figcaption>
-<strong>Officer - <a href="http://www.martinfaulkner.co.uk">Martin Faulkner</a>
-</figcaption>
-</figure>
-
-<figure class="item">
-{% picture face committee/robert.jpg %}
-<figcaption>
-<strong>Officer - Robert Meekings</a>
-</figcaption>
-</figure>
+{% endfor %}
+</section>
 
 {% endrow %}
 
@@ -117,14 +85,11 @@ These are the people who run the society and make decisions on what to do. If yo
 These brave men and women gave up their free time and sanity for TinkerSoc and
 have since moved on to pastures green. They should not be forgotten.
 
-* <strong><a href="http://omer.me/">Omer Kilic</a></strong> – Founder, President (2008/2009, 2009/2010)
-* **Chris Roberts** – Founder, Vice-President (2008/2009, 2009/2010), President (2010/2011)
-* **Emma Johnson** – Founder, Treasurer (2008/2009, 2009/2010, 2010/2011, 2011/2012)
-* **Matt Medland** – Secretary (2009/2010), President(2011/2012)
-* **Martin Ellis** - Secretary (2010/2011, 2011/2012)
-* **Kezzy Robins** – Communications Officer (2010/2011)
-* **Jordan Cook** - Wrong Uni Boy (2013/2014)
-* **Berni Cross** - Secretary (2013/2014)
-* <strong><a href="http://graymalk.in/">Simon Cooksey</a></strong> - Dog's body (2012/2013, 2013/2014)
-* <strong><a href="http://www.cs.kent.ac.uk/people/rpg/dk242/">Daniel Knox</a></strong> - President (2012/2013, 2013/2014)
+{% for fallen in site.data.committee.the_fallen %}
+{% if fallen.url == null %}
+* <strong>{{fallen.name}}</strong> – {{fallen.comment}}
+{% else %}
+* <strong><a href="{{fallen.url}}">{{fallen.name}}</a></strong> – {{fallen.comment}}
+{% endif %}
 
+{% endfor %}

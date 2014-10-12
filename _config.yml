@@ -10,6 +10,8 @@ menufolders:
  - /blog
 dropdowns:
  - Resources
+exclude:
+ - README.md
 
 category_dir: "blog"
 
