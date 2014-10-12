@@ -8,7 +8,7 @@ tags: []
 ---
 On Thursday 6th February 2014, Members of [TinkerSoc](http://www.tinkersoc.org]
 travelled to Broadstairs to join members of the [Hilderstone Amateur Radio and
-Electronics club](http://www.g0hrs.org/) to sit their Foundation Amature Radio
+Electronics club](http://www.g0hrs.org/) to sit their Foundation Amateur Radio
 license.  The members have been working towards their license for approximately
 4 months and everyone passed with flying colours and are now eligible to
 operate equipment of power up to and including 10 watts and building and

@@ -1,5 +1,5 @@
 ---
-title: Success for Members in Amature Radio
+title: Success for Members in Amateur Radio
 layout: post
 published: true
 categories:
@@ -8,7 +8,7 @@ tags: []
 ---
 On Thursday 3rd July 2014, three Members of [TinkerSoc](http://www.tinkersoc.org)
 travelled to Broadstairs to join members of the [Hilderstone Amateur Radio and
-Electronics club](http://www.g0hrs.org/) in sitting their Intermediate Amature Radio
+Electronics club](http://www.g0hrs.org/) in sitting their Intermediate Amateur Radio
 licence.  Over the past 4 months they have taken part in an web based course to learn the theory behind RF circuit design and operation. 
 This course culminated in projects such as laser tag guns and morse code transcievers being built.
 They all completed the exam successfully and are now eligible to

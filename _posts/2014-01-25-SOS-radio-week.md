@@ -23,5 +23,5 @@ enthusiasts from all across the UK, and beyond.
 
 {% picture 2014-01-25-SOS-radio-week/contact.jpg %}
 
-If you are interested in finding out more about amature radio, or would like to
+If you are interested in finding out more about amateur radio, or would like to
 join in please send us an email to committee at tinkersoc.org.
