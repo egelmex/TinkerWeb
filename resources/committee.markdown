@@ -30,12 +30,11 @@ section figure img {
 }
 
 section figure figcaption {
-    position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
     
-    background: rgba(0,0,0,0.7);
+    background: #111;
     text-align: center;
     color: #fff; 
     padding: 10px;
@@ -68,9 +67,9 @@ These are the people who run the society and make decisions on what to do. If yo
 <figcaption>
 
 {% if committeemem.url == null %}
-<strong>{{ committeemem.comment }} - {{committeemem.name}}</strong>
+{{ committeemem.comment }} - {{committeemem.name}}
 {% else %}
-<strong>{{ committeemem.comment }} - <a href="{{committeemem.url}}">{{committeemem.name}}</a></strong>
+{{ committeemem.comment }} - <a href="{{committeemem.url}}">{{committeemem.name}}</a>
 {% endif %}
 </figcaption>
 </figure>
