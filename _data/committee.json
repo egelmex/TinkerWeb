@@ -1,9 +1,9 @@
 {
     "current_committee" : [{
-        "name" : "Matthew Prentice",
+        "name" : "HAL 9000",
         "comment" : "President",
-        "image" : "committee/matt.jpg",
-        "url" : "http://electronicbyte.cc/"
+        "image" : "committee/dan.jpg",
+        "url" : "http://cs.kent.ac.uk/~dk242/"
     },
     {
         "name" : "Christina Nutton",
