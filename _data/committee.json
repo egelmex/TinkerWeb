@@ -1,9 +1,9 @@
 {
     "current_committee" : [{
-        "name" : "Matthew Prentice",
+        "name" : "HAL 9000",
         "comment" : "President",
-        "image" : "committee/matt.jpg",
-        "url" : "http://electronicbyte.cc/"
+        "image" : "committee/dan.jpg",
+        "url" : "http://cs.kent.ac.uk/~dk242/"
     },
     {
         "name" : "Christina Nutton",
@@ -87,8 +87,8 @@
         "url" : "http://graymalk.in/"
     },
     {
-        "name" : "Daniel Knox",
-        "comment" : "President (2012/2013, 2013/2014)",
-        "url" : "http://www.cs.kent.ac.uk/people/rpg/dk242/"
+        "name" : "Matthew Prentice",
+        "comment" : "President (2014)",
+        "url" : "http://electronicbyte.cc/"
     }]
 }
