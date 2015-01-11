@@ -6,7 +6,7 @@ categories:
   - Radio
 tags: []
 ---
-{% picture 2015-08-01-RSGB-examination-venue/rsgb.jpg %}
+{% picture 2015-08-01-RSGB-examination-venue/rsgb.png %}
 In the continuing effort to re-establish amateur radio at the University of Kent Canterbury,
 [The Shed](http://cs.kent.ac.uk/makerspace) (the School of Computing’s makerspace) applied to the [RSGB](http://rsgb.org/) for the university to become a registered examination center. Today, we have found out that the application was successful.
 
