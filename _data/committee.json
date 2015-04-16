@@ -24,12 +24,6 @@
         "url": null
     },
     {
-        "name" : "Ben Adamson",
-        "comment" : "Media Officer", 
-        "image" : "committee/ben.jpg",
-        "url" : null,
-    },
-    {
         "name" : "Martin Faulkner",
         "comment" : "Officer",
         "image" : "committee/martin.jpg",
@@ -88,7 +82,12 @@
     },
     {
         "name" : "Matthew Prentice",
-        "comment" : "President (2014)",
+        "comment" : "President (2013 - 2014)",
         "url" : "http://electronicbyte.cc/"
+    },
+    {
+        "name" : "Ben Adamson",
+        "comment" : "Media Officer (2013 - 2015)", 
+        "url" : null,
     }]
 }
